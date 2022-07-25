@@ -58,7 +58,7 @@ if ( ! function_exists('__session')) {
 
  function site(){
 	if( $_SERVER['HTTP_HOST'] != 'http://localhost/'){
-		redirect('https://radiwa.id');
+		redirect('https://notfound.id');
 	}
 }
 

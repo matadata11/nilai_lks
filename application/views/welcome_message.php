@@ -1,100 +1,101 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+    <title>Selamat Datang di Aplikasi Pilihanku</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="keywords" content="Aplikasi Penilaian Lomba Karya Siswa"/>
+	<meta name="description" content="nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian."/>
+	<meta name="subject" content="Situs Pendidikan">
+	<meta name="copyright" content="Not Found Indonesia">
+	<meta name="language" content="Indonesia">
+	<meta name="robots" content="index,follow" />
+	<meta name="revised" content="Monday, April 07th, 2022, 06:18 am" />
+	<meta name="Classification" content="Education">
+	<meta name="author" content="Dwi Satria Pangestu, no-reply@notfound.id">
+	<meta name="designer" content="Dwi Satria Pangestu, no-reply@notfound.id">
+	<meta name="reply-to" content="no-reply@notfound.id">
+	<meta name="owner" content="Dwi Satria Pangestu">
+	<meta name="url" content="https://notfound.id/">
+	<meta name="identifier-URL" content="https://notfound.id/">
+	<meta name="category" content="Admission, Education">
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="revisit-after" content="7 days">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Copyright" content="Not Found Indonesia" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="revisit-after" content="7" />
+	<meta name="webcrawlers" content="all" />
+	<meta name="rating" content="general" />
+	<meta name="spiders" content="all" />
+	<meta itemprop="name" content="Not Found Indonesia" />
+	<meta itemprop="description" content="nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian." />
 
-	<style type="text/css">
+	<meta itemprop="image" content="<?= __img('logo_nilai.png');?>" />
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+     <!-- Stylesheet -->
+     <link rel="stylesheet" type="text/css" href="<?= __css('bootstrap.min.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?= __css('style.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?= __css('components.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?= __css('all.min.css');?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="<?= __img('logo_nilai.png');?>" rel="shortcut icon">
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: url(<?= __img('bg.jpg');?>);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-		text-decoration: none;
-	}
-
-	a:hover {
-		color: #97310e;
-	}
-
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-		min-height: 96px;
-	}
-
-	p {
-		margin: 0 0 10px;
-		padding:0;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
+    </style>
 </head>
 <body>
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+    
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <form method="post" action="https://pilihanku.kandita.com/check-dpt">
+                    <div class="text-center my-5">
+                        <img src="<?= __img('nilaiku.png');?>" class="img-fluid w-50" alt="Aplikasi Penilaian LKS E-Voting">
+                        <p class="mt-1">Selamat Datang di Aplikasi Nilai LKS (E-Voting)</p>
+                    </div>
+                    <div class="input-group my-3">
+                        <input type="number" class="form-control" placeholder="No Registrasi Juri" name="nisn" autofocus required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-2" type="submit" name="submit"><i class="fas fa-fw fa-paper-plane"></i> MASUK</button>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="text-center">
+                            <p>&copy; 2022 - Powered by <a href="https://notfound.id"><?= __bidang('Aauthor');?></a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="userguide3/">User Guide</a>.</p>
-	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
-
+    <!-- Scripta -->
+    <script src="<?= __js('jquery-3.5.1.min.js');?>"></script> 
+    <script src="<?= __js('bootstrap.min.js');?>"></script>  
+    <script src="<?= __js('scripts.js');?>"></script> 
+    <script src="<?= __js('jquery.nicescroll.min.js');?>"></script> 
+    <script src="<?= __js('stisla.js');?>"></script> 
+    <script src="<?= __js('sweetalert.min.js');?>"></script> 
+    <script src="<?= __js('kandita.js');?>"></script>
 </body>
 </html>
