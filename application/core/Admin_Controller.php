@@ -10,8 +10,8 @@ class Admin_Controller extends MY_Controller {
     }
 
     public $vars = [
-		'header' 	=> 'backend/header',
 		'navbar' 	=> 'backend/navbar',
+		'sidebar' 	=> 'backend/sidebar',
 	];
 
 }

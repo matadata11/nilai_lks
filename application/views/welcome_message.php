@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Selamat Datang di Aplikasi Pilihanku</title>
+    <title>Selamat Datang di Aplikasi Nilaiku</title>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,8 +40,8 @@
 
 	<meta itemprop="image" content="<?= __img('logo_nilai.png');?>" />
 
-     <!-- Stylesheet -->
-     <link rel="stylesheet" type="text/css" href="<?= __css('bootstrap.min.css');?>">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="<?= __css('bootstrap.min.css');?>">
     <link rel="stylesheet" type="text/css" href="<?= __css('style.css');?>">
     <link rel="stylesheet" type="text/css" href="<?= __css('components.css');?>">
     <link rel="stylesheet" type="text/css" href="<?= __css('all.min.css');?>">
@@ -67,13 +67,13 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-5">
-                <form method="post" action="https://pilihanku.kandita.com/check-dpt">
+				<form method="post" action="<?=site_url('checkjuri')?>">
                     <div class="text-center my-5">
                         <img src="<?= __img('nilaiku.png');?>" class="img-fluid w-50" alt="Aplikasi Penilaian LKS E-Voting">
                         <p class="mt-1">Selamat Datang di Aplikasi Nilai LKS (E-Voting)</p>
                     </div>
                     <div class="input-group my-3">
-                        <input type="number" class="form-control" placeholder="No Registrasi Juri" name="nisn" autofocus required>
+                        <input type="text" class="form-control" placeholder="No Registrasi Juri" name="no_reg" autofocus required autocomplete="off">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-2" type="submit" name="submit"><i class="fas fa-fw fa-paper-plane"></i> MASUK</button>
                         </div>
