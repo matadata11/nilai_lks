@@ -196,6 +196,8 @@
 </div>
 <!-- end tambah -->
 
+
+
 <?php foreach($peserta as $row): ?>
 <div class="modal fade" id="hapus<?=$row['id_peserta']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">

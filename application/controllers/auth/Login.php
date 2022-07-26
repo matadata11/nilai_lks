@@ -26,6 +26,8 @@ class Login extends CI_Controller {
 							'id_admin'	        => $account['id_admin'],
 							'fullname'	        => $account['fullname'],
 							'kuusername'	    => $account['kuusername'],
+							'bidang'	        => $account['bidang'],
+							'level'	        	=> $account['level'],
 							'login'		        => 'KuOke',
 						];
 						$this->session->set_userdata($data);
@@ -74,6 +76,8 @@ class Login extends CI_Controller {
 						'id_juri'	        => $account['id_juri'],
 						'fullname'	        => $account['fullname'],
 						'email'	            => $account['email'],
+						'bidang'	        => $account['bidang'],
+						'level'	        	=> $account['level'],
 						'login'		        => 'JuriOk',
 					];
 					$this->session->set_userdata($data);

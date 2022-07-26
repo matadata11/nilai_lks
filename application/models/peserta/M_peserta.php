@@ -33,6 +33,16 @@ class M_peserta extends CI_Model {
         return $view->result_array();
 	}
 
+	public function getDataJuri()
+	{
+		$this->db->order_by('bidang', 'ASC');
+		// $this->db->where('bidang', $this->session->userdata('bidang'));
+		$query = $this->db->order_by('id_peserta', 'DESC');
+        $query = $this->db->get_where($this->_table, ['bidang' => __session('bidang')]);
+        return $query->result_array();
+	}
+
+
 	public function delete(){
         $query = $this->db->delete($this->_table, ['id_peserta' => __uri(2)]);
         return $query;

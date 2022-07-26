@@ -34,7 +34,7 @@ class M_juri extends CI_Model {
 			// $tgl1=date('y') + 1; 
 			$btn=date('m'); 
 			$batas = str_pad($kode, 4, "0", STR_PAD_LEFT);    
-			$kodetampil = "LKS"."-".$batas."-".$tgl."-"."Aceh"."-";  //format kode
+			$kodetampil = "LKS ACEH"."-".$batas;  //format kode
 			return $kodetampil;  
 	}
 
@@ -44,6 +44,17 @@ class M_juri extends CI_Model {
 		$this->db->order_by('fullname', 'DESC');
 		return $this->db->get($this->_table)->result_array();
 	}
+
+	public function update($data, $id_juri){
+        $query = $this->db->where('id_juri', $id_juri);
+        $query = $this->db->update($this->_table, $data);
+        return $query;
+    }
+
+	public function delete(){
+        $query = $this->db->delete($this->_table, ['id_juri' => __uri(2)]);
+        return $query;
+    }
 
 
 }

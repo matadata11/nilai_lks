@@ -20,6 +20,8 @@ $route['import-lomba']          = 'lomba/Mata_lomba/import_excel';
 // route juri
 $route['juri'] 					= 'juri/Juri';
 $route['add-juri'] 				= 'juri/Juri/store';
+$route['update-juri'] 			= 'juri/Juri/update';
+$route['remove-juri/(:num)'] 	= 'juri/Juri/destroy';
 
 $route['masuk'] 				= 'Authha';
 
