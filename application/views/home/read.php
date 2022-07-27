@@ -72,13 +72,6 @@
 
 </section>
 
-<?php if ($this->session->userdata('lomba_id') == '1' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '2' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '3' ) { ?>
 <?php require_once('modals/_home.php'); ?>
@@ -157,17 +150,5 @@
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '22' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '23' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '24' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '25' ) { ?>
 <?php require_once('modals/_home.php'); ?>
 <?php } ?>
