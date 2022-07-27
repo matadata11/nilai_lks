@@ -43,7 +43,7 @@
 			<li class="nav-item dropdown">
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-check-double"></i><span>Rekap Penilaian</span></a>
 				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="<?=site_url('nilai')?>">Data Penilaian</a></li>
+					<li><a class="nav-link" href="<?=site_url('nilai')?>">Penilaian</a></li>
 					<!-- <li><a class="nav-link" href="<?=site_url('pds/1')?>">Info PDS</a></li> 
 					<li><a class="nav-link" href="<?=site_url('pengguna')?>">Manajemen User</a></li>
 					<li><a class="nav-link" href="<?=site_url('patch-system')?>">Patch Portal</a></li>
