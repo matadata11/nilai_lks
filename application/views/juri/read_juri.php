@@ -31,7 +31,7 @@
                                 <td><?=$row['email']?></td>
                                 <td><b><?=$row['no_reg']?></b></td>
                                 <td><?=$row['bidang']?></td>
-                                <td><?=$row['created_at']?></td>
+                                <td><?=indo_date($row['created_at'])?></td>
                                 <td width="10%" class="text-center">
                                     <a href="#edit<?=$row['id_juri']?>" data-toggle="modal" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-pencil-alt"></i></a>
                                     <a href="#hapus<?=$row['id_juri']?>" data-toggle="modal" class="btn btn-sm btn-danger"><i class="fas fa-fw fa-trash-alt"></i></a>

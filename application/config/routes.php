@@ -5,9 +5,14 @@ $route['checkdulu']             = 'auth/login/checklogin';
 $route['checkjuri']             = 'auth/login/checkjuri';
 $route['keluaraja']             = 'auth/login/logout';
 
+// route nilai
+$route['nilai'] 				= 'penilaian/Penilaian';
+// end
+
 // route peserta
 $route['peserta'] 				= 'peserta/Peserta';
 $route['add-peserta'] 			= 'peserta/Peserta/store';
+$route['edit-peserta'] 			= 'peserta/Peserta/update';
 $route['remove-peserta/(:num)'] = 'peserta/Peserta/destroy';
 
 // route mata lomba

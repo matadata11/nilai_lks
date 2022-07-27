@@ -72,4 +72,102 @@
 
 </section>
 
+<?php if ($this->session->userdata('lomba_id') == '1' ) { ?>
 <?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '2' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '3' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '4' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '5' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '6' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '7' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '8' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '9' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '10' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '11' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '12' ) { ?>
+<?php require_once('modals/_design.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '13' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '14' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '15' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '16' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '17' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '18' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '19' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '20' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '21' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '22' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '23' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '24' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>
+
+<?php if ($this->session->userdata('lomba_id') == '25' ) { ?>
+<?php require_once('modals/_home.php'); ?>
+<?php } ?>

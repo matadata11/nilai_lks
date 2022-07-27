@@ -43,7 +43,7 @@
 
 					<div class="form-group">
 						<label>Bidang Lomba</label>
-						<select name="bidang" id="bidang" class="form-control" required="">
+						<select name="bidang" id="lomba" class="form-control" required="">
 							<option value="">pilih:</option>
 							<?php foreach($lomba as $row): ?>
 							<option value="<?=$row['lomba']?>"><?=$row['lomba']?></option>
@@ -52,7 +52,9 @@
 						<div class="invalid-feedback">
 							belum dipilih 
 						</div>
+					
 					</div>
+					<input type="hidden" class="form-control" name="lomba_id" autocomplete="off" required="">
 
 					<div class="form-group mb-0">
 						<label>Level</label>
@@ -64,6 +66,7 @@
 							belum dipilih 
 						</div>
 					</div>
+
 
 					</div>
                     <div class="card-footer text-right">
@@ -122,16 +125,18 @@
 
 					<div class="form-group">
 						<label>Bidang Lomba</label>
-						<select name="bidang" id="bidang" class="form-control" required="">
+						<select name="bidang" id="lomba1" class="form-control" required="">
 							<option value="<?=$row['bidang']?>"><?=$row['bidang']?></option>
-							<?php foreach($lomba as $row): ?>
-							<option value="<?=$row['lomba']?>"><?=$row['lomba']?></option>
+							<?php foreach($lomba as $rows): ?>
+							<option value="<?=$rows['lomba']?>"><?=$rows['lomba']?></option>
 							<?php endforeach; ?>
 						</select>
 						<div class="invalid-feedback">
 							belum dipilih 
 						</div>
 					</div>
+
+					<input type="hidden" class="form-control" name="lomba_id" value="<?=$row['lomba_id']?>" autocomplete="off" required="">
 
 					<!-- <div class="form-group mb-0">
 						<label>Level</label>

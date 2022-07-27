@@ -38,6 +38,23 @@ class M_lomba extends CI_Model {
         return $data->result();
     }
 
+	function get_data_lomba($lomba){
+		$hsl=$this->db->query("SELECT * FROM mt_lomba WHERE lomba='$lomba'");
+		if($hsl->num_rows()>0){
+			foreach ($hsl->result() as $data) {
+				$hasil=array(
+					'lomba' 			=> $data->lomba,
+					'id_lomba' 			=> $data->id_lomba,
+					// 'satuan' 		=> $data->satuan,
+					// 'harga_jual'	=> $data->harga_jual,
+					// 'stok' 			=> $data->stok,
+				
+					);
+			}
+		}
+		return $hasil;
+	}
+
 }
 
 /* End of file M_lomba.php */

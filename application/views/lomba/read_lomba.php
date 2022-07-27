@@ -15,7 +15,7 @@
                         <tr>
                             <th>#</th>
                             <th>Mata Lomba</th>
-                            <th>Peserata</th>
+                            <th>id_lomba</th>
                             <th>Created_at</th>
                             <th>Opsi</th>
                         </tr>
@@ -25,7 +25,7 @@
                             <tr>
                                 <td><?=$no++;?></td>
                                 <td><?=$row['lomba']?></td>
-                                <td><?=$row['peserta']?></td>
+                                <td><?=$row['id_lomba']?></td>
                                 <td><?=$row['created_at']?></td>
                                 <td width="20%" class="text-center">
                                     <a href="#edit<?=$row['id_lomba']?>" data-toggle="modal" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-pencil-alt"></i> edit</a>

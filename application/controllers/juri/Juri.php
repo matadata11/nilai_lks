@@ -30,6 +30,7 @@ class Juri extends admin_Controller {
 			$no_reg 		= $this->input->post('no_reg');
 			$bidang 		= $this->input->post('bidang');
 			$level 			= $this->input->post('level');
+			$lomba_id 		= $this->input->post('lomba_id');
 
 			// if($password != $password2){
 			// 	echo "Password Tidak Sama";
@@ -42,6 +43,7 @@ class Juri extends admin_Controller {
 					'no_reg' 		=> $no_reg,
 					'bidang' 		=> $bidang,
 					'level' 		=> $level,
+					'lomba_id' 		=> $lomba_id,
 					// 'password'      => password_hash($password, PASSWORD_DEFAULT),
 					'is_active' 	=> 1,
 					'created_at'	=> date('Y-m-d')
@@ -115,35 +117,37 @@ class Juri extends admin_Controller {
 		}
 
 		public function update()
-    {
-        if(isset($_POST['submit'])){
-            $id_juri 				= $this->input->post('id_juri', TRUE);
-			$admin_juri 			= $this->input->post('admin_juri');
-			$fullname 				= $this->input->post('fullname');
-			$instansi 				= $this->input->post('instansi');
-			$email 					= $this->input->post('email');
-			$no_reg 				= $this->input->post('no_reg');
-			$bidang 				= $this->input->post('bidang');
+		{
+			if(isset($_POST['submit'])){
+				$id_juri 				= $this->input->post('id_juri', TRUE);
+				$admin_juri 			= $this->input->post('admin_juri');
+				$fullname 				= $this->input->post('fullname');
+				$instansi 				= $this->input->post('instansi');
+				$email 					= $this->input->post('email');
+				$no_reg 				= $this->input->post('no_reg');
+				$bidang 				= $this->input->post('bidang');
+				$lomba_id 				= $this->input->post('lomba_id');
 
-            $data = [
-                'id_juri'   		=> $id_juri,
-                'admin_juri' 		=> $admin_juri,
-				'fullname' 			=> $fullname,
-				'instansi' 			=> $instansi,
-				'email' 			=> $email,
-				'no_reg' 			=> $no_reg,
-				'bidang' 			=> $bidang,
-                'updated_at'    	=> date('Y-m-d')
-            ];
-        }
-        $save = $this->juri->update($data, $id_juri);
-        if($save){
-            $this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');
-        }else{
-            $this->session->set_flashdata('notif_false', 'Data Gagal Ditambahkan.');
-        }
-        redirect($_SERVER['HTTP_REFERER']);
-    }
+				$data = [
+					'id_juri'   		=> $id_juri,
+					'admin_juri' 		=> $admin_juri,
+					'fullname' 			=> $fullname,
+					'instansi' 			=> $instansi,
+					'email' 			=> $email,
+					'no_reg' 			=> $no_reg,
+					'bidang' 			=> $bidang,
+					'lomba_id' 			=> $lomba_id,
+					'updated_at'    	=> date('Y-m-d')
+				];
+			}
+			$save = $this->juri->update($data, $id_juri);
+			if($save){
+				$this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');
+			}else{
+				$this->session->set_flashdata('notif_false', 'Data Gagal Ditambahkan.');
+			}
+			redirect($_SERVER['HTTP_REFERER']);
+		}
 
 		public function destroy()
 		{

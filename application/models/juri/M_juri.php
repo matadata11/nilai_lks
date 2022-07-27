@@ -57,6 +57,8 @@ class M_juri extends CI_Model {
     }
 
 
+	
+
 }
 
 /* End of file M_juri.php */

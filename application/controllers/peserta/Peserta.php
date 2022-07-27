@@ -67,6 +67,7 @@ class Peserta extends Admin_Controller {
 
 		$get_prov = $this->db->select('*')->from('wilayah_provinsi')->get();
         $this->vars['provinsi'] = $get_prov->result();
+		
 
 		$this->vars['peserta']	    = $this->peserta->getData();
 		$this->vars['lomba']	    = $this->lomba->getData();
@@ -191,6 +192,58 @@ class Peserta extends Admin_Controller {
 			redirect($_SERVER['HTTP_REFERER']);
 			}
 		}
+
+		public function update()
+		{
+			if(isset($_POST['submit'])){
+				$id_peserta 			= $this->input->post('id_peserta', TRUE);
+				$bidang 				= $this->input->post('bidang');
+				$fullname 				= $this->input->post('fullname');
+				$nis 					= $this->input->post('nis');
+				$tmp_lahir 				= $this->input->post('tmp_lahir');
+				$tgl_lahir 				= $this->input->post('tgl_lahir');
+				$kelamin 				= $this->input->post('kelamin');
+				$agama 					= $this->input->post('agama');
+				$hp 					= $this->input->post('hp');
+				$sekolah_asal 			= $this->input->post('sekolah_asal');
+				$kelas 					= $this->input->post('kelas');
+				$alamat 				= $this->input->post('alamat');
+				$no_tlp 				= $this->input->post('no_tlp');
+				$email 					= $this->input->post('email');
+				$bank 					= $this->input->post('bank');
+				$nama 					= $this->input->post('nama');
+				$no_rek 				= $this->input->post('no_rek');
+
+				$data = [
+					'id_peserta'   		=> $id_peserta,
+					'bidang' 			=> $bidang,
+					'fullname' 			=> $fullname,
+					'nis' 				=> $nis,
+					'tmp_lahir' 		=> $tmp_lahir,
+					'tgl_lahir' 		=> $tgl_lahir,
+					'kelamin' 			=> $kelamin,
+					'agama' 			=> $agama,
+					'hp' 				=> $hp,
+					'sekolah_asal' 		=> $sekolah_asal,
+					'kelas' 			=> $kelas,
+					'alamat' 			=> $alamat,
+					'no_tlp' 			=> $no_tlp,
+					'email' 			=> $email,
+					'bank' 				=> $bank,
+					'nama' 				=> $nama,
+					'no_rek' 			=> $no_rek,
+					'updated_at'    	=> date('Y-m-d')
+				];
+			}
+			$save = $this->peserta->update($data, $id_peserta);
+			if($save){
+				$this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');
+			}else{
+				$this->session->set_flashdata('notif_false', 'Data Gagal Ditambahkan.');
+			}
+			redirect($_SERVER['HTTP_REFERER']);
+		}
+
 
 		public function destroy()
     {

@@ -74,6 +74,7 @@ class Login extends CI_Controller {
 				if($account['is_active'] == 1){
 					$data = [
 						'id_juri'	        => $account['id_juri'],
+						'lomba_id'	        => $account['lomba_id'],
 						'fullname'	        => $account['fullname'],
 						'email'	            => $account['email'],
 						'bidang'	        => $account['bidang'],

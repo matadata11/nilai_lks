@@ -26,9 +26,10 @@ class M_peserta extends CI_Model {
 	// Mengambil data dari database
 	public function getData()
 	{
+		$this->db->select('*');
 		$this->db->order_by('bidang', 'ASC');
-		$query = $this->db->join('wilayah_kabupaten', 'wilayah_kabupaten.id_kabupaten = mt_peserta.kabupaten_id');
 		$query = $this->db->join('wilayah_provinsi', 'wilayah_provinsi.id_provinsi = mt_peserta.provinsi_id');
+		$query = $this->db->join('wilayah_kabupaten', 'wilayah_kabupaten.id_kabupaten = mt_peserta.kabupaten_id');
 		$view = $this->db->get($this->_table);
         return $view->result_array();
 	}
@@ -42,6 +43,11 @@ class M_peserta extends CI_Model {
         return $query->result_array();
 	}
 
+	public function update($data, $id_peserta){
+        $query = $this->db->where('id_peserta', $id_peserta);
+        $query = $this->db->update($this->_table, $data);
+        return $query;
+    }
 
 	public function delete(){
         $query = $this->db->delete($this->_table, ['id_peserta' => __uri(2)]);

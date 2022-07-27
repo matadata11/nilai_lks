@@ -21,6 +21,12 @@ class Mata_lomba extends Admin_Controller {
         $this->load->view('backend/main', $this->vars);
 	}
 
+	function get_lomba(){
+        $lomba=$this->input->post('lomba');
+		$data=$this->lomba->get_data_lomba($lomba);
+		echo json_encode($data);
+    }
+
 	public function store()
     {
         if(isset($_POST['submit'])){

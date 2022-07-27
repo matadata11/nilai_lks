@@ -163,7 +163,7 @@
             <footer class="main-footer">
                 <div class="row">
                     <div class="col-6">
-                            Copyright &copy; 2022 - <?=__bidang('auth')?>.
+                            Copyright &copy; 2022 - <?=__bidang('Aauthor')?>.
                     </div>
                     <div class="col-6 text-right">
                         Version <?=__bidang('version')?>
@@ -296,6 +296,62 @@ function clock()
 }
 
     setInterval(clock,1000);
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('#lomba').on('input',function(){
+			
+			var lomba=$(this).val();
+			$.ajax({
+				type : "POST",
+				url  : "<?php echo base_url('lomba/Mata_lomba/get_lomba')?>",
+				dataType : "JSON",
+				data : {lomba: lomba},
+				cache:false,
+				success: function(data){
+					$.each(data,function(lomba, id_lomba){
+						$('[name="lomba_id"]').val(data.id_lomba);
+						// $('[name="satuan"]').val(data.satuan);
+						// $('[name="harga"]').val(data.harga_jual);
+						// $('[name="stok"]').val(data.stok);
+						
+					});
+					
+				}
+			});
+			return false;
+		});
+
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('#lomba1').on('input',function(){
+			
+			var lomba=$(this).val();
+			$.ajax({
+				type : "POST",
+				url  : "<?php echo base_url('lomba/Mata_lomba/get_lomba')?>",
+				dataType : "JSON",
+				data : {lomba: lomba},
+				cache:false,
+				success: function(data){
+					$.each(data,function(lomba, id_lomba){
+						$('[name="lomba_id"]').val(data.id_lomba);
+						// $('[name="satuan"]').val(data.satuan);
+						// $('[name="harga"]').val(data.harga_jual);
+						// $('[name="stok"]').val(data.stok);
+						
+					});
+					
+				}
+			});
+			return false;
+		});
+
+	});
 </script>
 
 </body>
