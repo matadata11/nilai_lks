@@ -354,5 +354,37 @@ function clock()
 	});
 </script>
 
+<script type="text/javascript">
+    $("#input1,#input2,#input3,#input4,#input5,#input6,#input7,#input8,#input9,#input10,#input11,#input12,#input13,#input15").keyup(function() {
+        var val1 = $('#input1').val(); 
+        var val2 = $('#input2').val(); 
+        var val3 = $('#input3').val(); 
+        var val4 = $('#input4').val(); 
+        var val5 = $('#input5').val(); 
+        var val6 = $('#input6').val(); 
+        var val7 = $('#input7').val(); 
+        var val8 = $('#input8').val(); 
+        var val9 = $('#input9').val(); 
+        var val10 = $('#input10').val(); 
+        var val11 = $('#input11').val(); 
+        var val12 = $('#input12').val(); 
+        var val13 = $('#input13').val(); 
+        var val15 = $('#input15').val(); 
+        var hasil = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8) + Number(val9) + Number(val10) + Number(val11) + Number(val12) + Number(val13) ;
+
+        var bagi = Number(hasil) / 39 ;
+        var kali = Number(bagi) * 100 ;
+        var persen = Number(kali) * 0.35 ;
+
+        if ( val1 != "" && val2 != "" && val3 != "" && val4 != "" && val5 != "" && val6 != "" && val7 != "" && val8 != "" && val9 != "" && val10 != "" && val11 != "" && val12 != "" && val13 != "" && val15 != "" ) {
+        $('#input14').val(kali);
+        $('#input16').val(persen);
+        }
+        
+    })
+
+ 
+</script>
+
 </body>
 </html>

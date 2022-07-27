@@ -63,47 +63,53 @@
                                                     <td>Dwi</td>
                                                     <td>SMK</td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="1" id="input1" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="2" id="input2" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="3" id="input3" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="4" id="input4" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="5" id="input5" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="6" id="input6" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="7" id="input7" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="8" id="input8" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="9" id="input9" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="10" id="input10" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="11" id="input11" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="12" id="input12" class="form-control" >
                                                     </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="13" id="input13" class="form-control" >
                                                     </td>
                                                     </td>
-                                                    <td>100</td>
-                                                    <td>35%</td>
+                                                    <td style="max-width:40px;">
+                                                     <input type="hidden" name="total" id="input15" value="39" class="form-control" >
+                                                   <!-- <input type="text" name="total" id="input" value="100" class="form-control" > -->
+                                                    <input type="text" name="total" readonly id="input14" class="form-control" >
+                                                    </td>
+                                                    <td style="max-width:40px;">
+                                                    <input type="text" name="total" readonly id="input16" class="form-control" >
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
