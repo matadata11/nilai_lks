@@ -14,6 +14,8 @@ class Penilaian extends Admin_Controller {
 
 	public function index()
 	{
+		$this->vars['penilaian']	= $this->nilai->getData();
+
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_nilai';
         $this->load->view('backend/main', $this->vars);

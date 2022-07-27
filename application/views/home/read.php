@@ -152,4 +152,7 @@
 <?php if ($this->session->userdata('lomba_id') == '22' ) { ?>
 <?php require_once('modals/_welding.php'); ?>
 <?php } ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b7b9c5df2dac849084ca4c45e42af960104af68c
