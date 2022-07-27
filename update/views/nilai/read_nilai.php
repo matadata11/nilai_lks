@@ -28,8 +28,9 @@
                                 <td><?=$row['lomba']?></td>
                                 <td><?=indo_date($row['tanggal'])?></td>
                                 <td width="20%" class="text-center">
-                                    <a href="#edit<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-pencil-alt"></i> edit</a>
-                                    <a href="#hapus<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-danger"><i class="fas fa-fw fa-trash-alt"></i> Hapus</a>
+                                    <a href="#edit<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-info"><i class="fas fa-fw fa-upload"></i></a>
+                                    <a href="#edit<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                                    <a href="#hapus<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-danger"><i class="fas fa-fw fa-trash-alt"></i></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

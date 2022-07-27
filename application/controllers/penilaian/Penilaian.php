@@ -35,11 +35,28 @@ class Penilaian extends Admin_Controller {
                 'tanggal'    		=> date('Y-m-d')
             ];
         }
-        $save = $this->nilai->entry($data);
+        $save = $this->db->get_where('mt_penilaian', ['lomba_id' => $lomba_id])->row_array();
         if($save){
-            $this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');
+            $this->session->set_flashdata('notif_false', '<div class="alert alert-danger  alert-dismissible fade show" role="alert" id="notifications"><i class="mdi mdi-check-all me-2"></i> Hanya Boleh Absen satu kali . </div>..');
         }else{
-            $this->session->set_flashdata('notif_false', 'Data Gagal Ditambahkan.');
+            $flashdata  = $this->nilai->entry($data);
+            
+        }
+        if($flashdata){
+            $this->session->set_flashdata('notif_true', 'Terima Kasih');
+            $this->session->set_flashdata('audio', site_url('public/audio/terimakasih.mp3'));
+            
+        }
+        redirect($_SERVER['HTTP_REFERER']);
+    }
+
+    public function destroy()
+    {
+        $save = $this->nilai->delete();
+        if($save){
+            $this->session->set_flashdata('notif_true', 'Data Berhasil Dihapus.');
+        }else{
+            $this->session->set_flashdata('notif_false', 'Data Gagal Dihapus.');
         }
         redirect($_SERVER['HTTP_REFERER']);
     }

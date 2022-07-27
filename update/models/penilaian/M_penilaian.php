@@ -22,6 +22,12 @@ class M_penilaian extends CI_Model {
         return $query;
     }
 
+	public function delete(){
+        $query = $this->db->delete($this->_table, ['id_penilaian' => __uri(2)]);
+        return $query;
+    }
+
+
 }
 
 /* End of file M_penilaian.php */

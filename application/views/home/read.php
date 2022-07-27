@@ -12,10 +12,10 @@
 					<div class="card-icon">
 					<i class="far fa-question-circle"></i>
 					</div>
-					<h5>Mata Lomba <b><?=__session('bidang')?></b></h5>
+					<a href="#add" data-toggle="modal" style="color:#fff;"><h5>Mata Lomba <b><?=__session('bidang')?></b></h5></a>
 					<!-- <div class="card-description">Mata Lomba <b><?=__session('bidang')?></b></div> -->
 				</div>
-				<div class="card-body p-0">
+				<!-- <div class="card-body p-0">
 					<div class="tickets-list">
 					<?php foreach($peserta as $row): ?>
 					<a href="#add"  data-toggle="modal" class="ticket-item">
@@ -34,7 +34,7 @@
 						View All <i class="fas fa-chevron-right"></i>
 					</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -152,7 +152,3 @@
 <?php if ($this->session->userdata('lomba_id') == '22' ) { ?>
 <?php require_once('modals/_welding.php'); ?>
 <?php } ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> b7b9c5df2dac849084ca4c45e42af960104af68c
