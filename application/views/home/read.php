@@ -1,7 +1,7 @@
 <section class="section">
 	<div class="section-header">
         <div class="col-12">
-		<marquee direction="left" scrollamount="5" align="center">Nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian..</marquee>
+		<marquee direction="left" scrollamount="5" align="center">Nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian.</marquee>
 		</div>
     </div>
 
