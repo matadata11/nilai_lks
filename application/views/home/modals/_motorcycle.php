@@ -15,15 +15,21 @@
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">PRAKTEK 1</a>
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">TEORI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">PRAKTEK 2</a>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">PRAKTEK 1</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">MODUL C</a>
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">PRAKTEK 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="hasil-tab" data-toggle="tab" href="#hasil" role="tab" aria-controls="hasil" aria-selected="false">NILAI DAN PERINGKAT</a>
                                 </li>
                             </ul>
+
+
+                            <!-- tab 1 -->
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
@@ -33,76 +39,17 @@
                                                     <th class="align-middle text-center" rowspan="2">#</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
-                                                    <th class="align-middle text-center" colspan="8" >Server 1</th>
-                                                    <th class="align-middle text-center" colspan="5">Server 2</th>
-                                                    <th class="align-middle text-center" rowspan="2">Total</th>
-                                                    <th class="align-middle text-center" rowspan="2">Hasil</th>
+                                                    <th class="align-middle text-center" rowspan="2">NISN</th>
+                                                    <th class="align-middle text-center" rowspan="2">Nilai Teori <br> (25%)</th>
                                                 </tr>
 
-                                                <tr>
-                                                    <th class="text-center">1</th>
-                                                    <th class="text-center">2</th>
-                                                    <th class="text-center">3</th>
-                                                    <th class="text-center">4</th>
-                                                    <th class="text-center">5</th>
-                                                    <th class="text-center">6</th>
-                                                    <th class="text-center">7</th>
-                                                    <th class="text-center">8</th>
-
-                                                    <th class="text-center">1</th>
-                                                    <th class="text-center">2</th>
-                                                    <th class="text-center">3</th>
-                                                    <th class="text-center">4</th>
-                                                    <th class="text-center">5</th>
-                                                    
-                                                </tr>
 
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Dwi</td>
                                                     <td>SMK</td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    </td>
-                                                    <td>100</td>
+                                                    <td>1234567</td>
                                                     <td>35%</td>
                                                 </tr>
                                             </tbody>
@@ -114,37 +61,26 @@
                                 <!-- tab 2 -->
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     
-                                <div class="card-body table-responsive">
+                                <!-- <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> -->
+                                    <div class="card-body table-responsive">
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:150%;">
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle text-center" rowspan="2">#</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
-                                                    <th class="align-middle text-center" colspan="8" >Router A</th>
-                                                    <th class="align-middle text-center" colspan="8">Router B</th>
-                                                    <th class="align-middle text-center" rowspan="2">Total</th>
-                                                    <th class="align-middle text-center" rowspan="2">Hasil</th>
+                                                    <th class="align-middle text-center" rowspan="2">NISN</th>
+                                                    <th class="align-middle text-center" colspan="5" >PRAKTEK 1</th>
+                                                    <th class="align-middle text-center" rowspan="2">Total Praktek 1  <br> (35%)</th>
                                                 </tr>
 
                                                 <tr>
-                                                    <th class="text-center">1</th>
-                                                    <th class="text-center">2</th>
-                                                    <th class="text-center">3</th>
-                                                    <th class="text-center">4</th>
-                                                    <th class="text-center">5</th>
-                                                    <th class="text-center">6</th>
-                                                    <th class="text-center">7</th>
-                                                    <th class="text-center">8</th>
-
-                                                    <th class="text-center">1</th>
-                                                    <th class="text-center">2</th>
-                                                    <th class="text-center">3</th>
-                                                    <th class="text-center">4</th>
-                                                    <th class="text-center">5</th>
-                                                    <th class="text-center">6</th>
-                                                    <th class="text-center">7</th>
-                                                    <th class="text-center">8</th>
+                                                    <th class="text-center">POS-1 <br> (Chasis)</th>
+                                                    <th class="text-center">POS-2 <br> (Electrical)</th>
+                                                    <th class="text-center">POS-3 <br> (Engine)</th>
+                                                    <th class="text-center">POS-4 <br> (Fuel System)</th>
+                                                    <th class="text-center">POS-5 <br>  (Alat Ukur)</th>
                                                 </tr>
 
                                             <tbody>
@@ -152,6 +88,7 @@
                                                     <td>1</td>
                                                     <td>Dwi</td>
                                                     <td>SMK</td>
+                                                    <td>1234567</td>
                                                     <td style="max-width:30px;">
                                                         <input type="text" class="form-control" >
                                                     </td>
@@ -167,40 +104,6 @@
                                                     <td style="max-width:30px;">
                                                         <input type="text" class="form-control" >
                                                     </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td>100</td>
                                                     <td>35%</td>
                                                 </tr>
                                             </tbody>
@@ -218,20 +121,15 @@
                                                     <th class="align-middle text-center" rowspan="2">#</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
-                                                    <th class="align-middle text-center" colspan="8" >MODUL CISCO</th>
-                                                    <th class="align-middle text-center" rowspan="2">Total</th>
-                                                    <th class="align-middle text-center" rowspan="2">Hasil</th>
+                                                    <th class="align-middle text-center" rowspan="2">NISN</th>
+                                                    <th class="align-middle text-center" colspan="1" >PRAKTEK 2</th>
+                                                    <th class="align-middle text-center" rowspan="2">Total Praktek 2 <br> (40%)</th>
+
                                                 </tr>
 
                                                 <tr>
-                                                    <th class="text-center">1</th>
-                                                    <th class="text-center">2</th>
-                                                    <th class="text-center">3</th>
-                                                    <th class="text-center">4</th>
-                                                    <th class="text-center">5</th>
-                                                    <th class="text-center">6</th>
-                                                    <th class="text-center">7</th>
-                                                    <th class="text-center">8</th>
+                                                    <th class="text-center">TroubleShooting</th>
+
 
                                                 </tr>
 
@@ -240,32 +138,36 @@
                                                     <td>1</td>
                                                     <td>Dwi</td>
                                                     <td>SMK</td>
+                                                    <td>12344</td>
                                                     <td style="max-width:30px;">
                                                         <input type="text" class="form-control" >
                                                     </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td>100</td>
                                                     <td>35%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                    <!-- tab 4 -->
+                                    <div class="tab-pane fade" id="hasil" role="tabpanel" aria-labelledby="hasil-tab">
+                                <div class="card-body table-responsive">
+                                        <table class="table table-bordered table-hover table-sm" id="" style="width:150%;">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle text-center" rowspan="2">#</th>
+                                                    <th class="align-middle text-center" rowspan="2">NILAI AKHIR</th>
+                                                    <th class="align-middle text-center" rowspan="2">PERINGKAT</th>
+                                                    
+
+                                                </tr>
+
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Dwi</td>
+                                                    <td>SMK</td>
                                                 </tr>
                                             </tbody>
                                         </table>
