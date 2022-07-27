@@ -30,6 +30,11 @@ $route['remove-juri/(:num)'] 	= 'juri/Juri/destroy';
 
 $route['masuk'] 				= 'Authha';
 
+// route pact
+$route['patch']                = 'setting/Master_patch';
+$route['patching']             = 'setting/Master_patch/patchsystem';
+// end
+
 
 $route['default_controller'] 	= 'welcome';
 $route['404_override'] 			= '';

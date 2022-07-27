@@ -57,7 +57,7 @@
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-cog"></i><span>Pengaturan</span></a>
 				<ul class="dropdown-menu">
 					<li><a class="nav-link" href="<?=site_url('pengguna')?>">Manajemen User</a></li>
-					<li><a class="nav-link" href="<?=site_url('patch-system')?>">Patch NilaiKu</a></li>
+					<li><a class="nav-link" href="<?=site_url('patch')?>">Patch NilaiKu</a></li>
 					<li><a class="nav-link" href="<?=site_url('dbackup')?>">Backup Basis Data</a></li>
 					<li><a class="nav-link" href="<?=site_url()?>">Web Service</a></li>
 				</ul>
