@@ -72,48 +72,41 @@
 
 </section>
 
-<?php if ($this->session->userdata('lomba_id') == '1' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '2' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '3' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_pemasaran.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '4' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_wall.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '5' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_automobile.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '6' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_cabinet.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '7' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_cloud.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '8' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_electrical.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '9' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_electronics.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '10' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_farmacy.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '11' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_fashion.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '12' ) { ?>
@@ -121,53 +114,42 @@
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '13' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_hairdressing.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '14' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_Network.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '15' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_landscape.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '16' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_livestock.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '17' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_mechanical.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '18' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_motorcycle.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '19' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_nautica.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '20' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_refrigeration.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '21' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_restaurant.php'); ?>
 <?php } ?>
 
 <?php if ($this->session->userdata('lomba_id') == '22' ) { ?>
-<?php require_once('modals/_home.php'); ?>
+<?php require_once('modals/_welding.php'); ?>
 <?php } ?>
 
-<?php if ($this->session->userdata('lomba_id') == '23' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '24' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
-
-<?php if ($this->session->userdata('lomba_id') == '25' ) { ?>
-<?php require_once('modals/_home.php'); ?>
-<?php } ?>
