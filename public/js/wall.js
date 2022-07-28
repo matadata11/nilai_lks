@@ -1,4 +1,4 @@
-$("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall11,#wall12,#wall13,#wall14,#wall15,#wall16,#wall17,#wall18").keyup(function() {
+$("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall11,#wall12,#wall13,#wall14,#wall15,#wall16,#wall17,#wall18,#wall19,#wall20,#wall21,#wall22,#wall23,#wall24,#wall25,#wall26,#wall27,#wall28,#wall29,#wall30,#wall31,#wall32").keyup(function() {
     var val1 = $('#wall1').val(); 
 	var val2 = $('#wall2').val(); 
 	var val3 = $('#wall3').val(); 
@@ -17,6 +17,20 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
 	var val16 = $('#wall16').val(); 
 	var val17 = $('#wall17').val(); 
 	var val18 = $('#wall18').val(); 
+    var val19 = $('#wall19').val(); 
+	var val20 = $('#wall20').val(); 
+	var val21 = $('#wall21').val(); 
+	var val22 = $('#wall22').val(); 
+	var val23 = $('#wall23').val(); 
+	var val24 = $('#wall24').val(); 
+	var val25 = $('#wall25').val(); 
+	var val26 = $('#wall26').val(); 
+	var val27 = $('#wall27').val(); 
+	var val28 = $('#wall28').val(); 
+	var val29 = $('#wall29').val(); 
+	var val30 = $('#wall30').val(); 
+	var val31 = $('#wall31').val(); 
+	var val32 = $('#wall32').val(); 
 
 	var tambah = Number(val1) * Number(val2) ;
 	var tambah1 = Number(val3) * Number(val4) ;
@@ -27,6 +41,14 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
 	var tambah6 = Number(val13) * Number(val14) ;
 	var tambah7 = Number(val15) * Number(val16) ;
 	var tambah8 = Number(val17) * Number(val18) ;
+    var tambah9 = Number(val19) * Number(val20) ;
+	var tambah10 = Number(val21) * Number(val22) ;
+	var tambah11 = Number(val23) * Number(val24) ;
+	var tambah12 = Number(val25) * Number(val26) ;
+	var tambah13 = Number(val27) * Number(val28) ;
+	var tambah14 = Number(val29) * Number(val30) ;
+	var tambah15 = Number(val31) * Number(val32) ;
+
 
     // 
     var bagi = Number(tambah) / 39 ;
@@ -43,6 +65,14 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
 	if ( val13 != "" && val14 != "" ) 
 	if ( val15 != "" && val16 != "" ) 
 	if ( val17 != "" && val18 != "" ) 
+    if ( val19 != "" && val20 != "" ) 
+	if ( val21 != "" && val22 != "" ) 
+	if ( val23 != "" && val24 != "" ) 
+	if ( val25 != "" && val26 != "" ) 
+	if ( val27 != "" && val28 != "" ) 
+	if ( val29 != "" && val30 != "" ) 
+	if ( val31 != "" && val32 != "" ) 
+    
     
     {
     $('#walla').val(tambah);
@@ -54,47 +84,17 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
     $('#wallg').val(tambah6);
     $('#wallh').val(tambah7);
     $('#walli').val(tambah8);
-    // $('#input16').val(per);
+    $('#wallj').val(tambah9);
+    $('#wallk').val(tambah10);
+    $('#walll').val(tambah11);
+    $('#wallm').val(tambah12);
+    $('#walln').val(tambah13);
+    $('#wallo').val(tambah14);
+    $('#wallp').val(tambah15);
 
 	}
 })
 
-// modul 2
-$("#input17,#input18,#input19,#inputa,#inputa1,#inputa2,#inputa3,#inputa4,#inputa5,#inputa6,#inputa7,#inputa8,#inputa9,#inputa10,#inputa11,#inputa12").keyup(function() {
-	var val17 = $('#input17').val(); 
-	var val18 = $('#input18').val(); 
-	var val19 = $('#input19').val(); 
-	var vala = $('#inputa').val(); 
-	var vala1 = $('#inputa1').val(); 
-	var vala2 = $('#inputa2').val(); 
-	var vala3 = $('#inputa3').val(); 
-	var vala4 = $('#inputa4').val(); 
-	var vala5 = $('#inputa5').val(); 
-	var vala6 = $('#inputa6').val(); 
-	var vala7 = $('#inputa7').val(); 
-	var vala8 = $('#inputa8').val(); 
-	var vala9 = $('#inputa9').val(); 
-	var vala10 = $('#inputa10').val(); 
-	var vala11 = $('#inputa11').val(); 
-	var vala12 = $('#inputa12').val(); 
-
-
-    // modul 2
-    var modul2 = Number(val17) + Number(val18) + Number(val19) + Number(vala) + Number(vala1) + Number(vala2) + Number(vala3) + Number(vala4) + Number(vala5) + Number(vala6) + Number(vala7) + Number(vala8) + Number(vala9) + Number(vala10) + Number(vala11) + Number(vala12);
-
-    var a = Number(modul2) / 48;
-    var b = Number(a) * 100;
-    var c = Number(b) * 0.35 ;
-
-	if ( val17 != "" && val18 != "" && val19 != "" && vala != "" && vala1 != ""  && vala2 != "" && vala3 != "" && vala4 != "" && vala5 != "" && vala6 != "" && vala7!= "" && vala8 != "" && vala9 != "" && vala10 != "" && vala11 != "" && vala12 != "") 
-    
-    {
-    // mod 2
-    $('#inputa13').val(b);
-    $('#inputa14').val(c);
-
-	}
-})
 
 // modul 3
 $("#input30,#input31,#input32,#input33,#input34,#input35,#input36,#input37").keyup(function() {
