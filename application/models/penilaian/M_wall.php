@@ -13,6 +13,11 @@ class M_wall extends CI_Model {
         return $query->result_array();
     }
 
+    public function entry($data){
+        $query = $this->db->insert($this->_table, $data);
+        return $query;
+    }
+
 }
 
 /* End of file M_wall.php */

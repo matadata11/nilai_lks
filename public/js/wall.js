@@ -1,4 +1,4 @@
-$("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall11,#wall12").keyup(function() {
+$("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall11,#wall12,#wall13,#wall14,#wall15,#wall16,#wall17,#wall18").keyup(function() {
     var val1 = $('#wall1').val(); 
 	var val2 = $('#wall2').val(); 
 	var val3 = $('#wall3').val(); 
@@ -11,6 +11,12 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
 	var val10 = $('#wall10').val(); 
 	var val11 = $('#wall11').val(); 
 	var val12 = $('#wall12').val(); 
+	var val13 = $('#wall13').val(); 
+	var val14 = $('#wall14').val(); 
+	var val15 = $('#wall15').val(); 
+	var val16 = $('#wall16').val(); 
+	var val17 = $('#wall17').val(); 
+	var val18 = $('#wall18').val(); 
 
 	var tambah = Number(val1) * Number(val2) ;
 	var tambah1 = Number(val3) * Number(val4) ;
@@ -18,6 +24,9 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
 	var tambah3 = Number(val7) * Number(val8) ;
 	var tambah4 = Number(val9) * Number(val10) ;
 	var tambah5 = Number(val11) * Number(val12) ;
+	var tambah6 = Number(val13) * Number(val14) ;
+	var tambah7 = Number(val15) * Number(val16) ;
+	var tambah8 = Number(val17) * Number(val18) ;
 
     // 
     var bagi = Number(tambah) / 39 ;
@@ -31,6 +40,9 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
 	if ( val7 != "" && val8 != "" ) 
 	if ( val9 != "" && val10 != "" ) 
 	if ( val11 != "" && val12 != "" ) 
+	if ( val13 != "" && val14 != "" ) 
+	if ( val15 != "" && val16 != "" ) 
+	if ( val17 != "" && val18 != "" ) 
     
     {
     $('#walla').val(tambah);
@@ -39,6 +51,9 @@ $("#wall1,#wall2,#wall3,#wall4,#wall5,#wall6,#wall7,#wall8,#wall9,#wall10,#wall1
     $('#walld').val(tambah3);
     $('#walle').val(tambah4);
     $('#wallf').val(tambah5);
+    $('#wallg').val(tambah6);
+    $('#wallh').val(tambah7);
+    $('#walli').val(tambah8);
     // $('#input16').val(per);
 
 	}

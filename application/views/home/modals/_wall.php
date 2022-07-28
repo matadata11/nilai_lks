@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-wall')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -27,7 +27,7 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="2">#</th>
+                                                    <th class="align-middle text-center" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
                                                     <th class="align-middle text-center" rowspan="2">NISN</th>
@@ -37,11 +37,25 @@
 
                                             <tbody>
                                                 <tr>
-                                                    <td>1</td>
-                                                    <td>Dwi</td>
-                                                    <td>SMK</td>
+                                                    <td class="align-middle text-center" style="max-width:10px;">
+                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                    </td>
+                                                    <td style="max-width:10px;">
+                                                    <select name="peserta" id="fullname" class="form-control" required="">
+                                                        <option value="">pilih:</option>
+                                                        <?php foreach($peserta as $row): ?>
+                                                        <option value="<?=$row['fullname']?>"><?=$row['fullname']?></option>
+                                                        <?php endforeach; ?>
+                                                    </select>
+                                                    </td>
+                                                    <td style="max-width:20px;">
+                                                    <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+                                                    </td>
                                                     <td>1234567</td>
-                                                    <td>35%</td>
+                                                    <td style="max-width:20px;">
+                                                    <!-- <input type="text" class="form-control" name="total" id="inputc" autocomplete="off" required=""> -->
+                                                    <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -148,42 +162,42 @@
                                                     <td>#</td>
                                                     <td>kebersihan pasangan anak tangga </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n19" id="wall13" class="form-control" >
                                                     </td>
                                                     <td>0.5</td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n20" id="wall14" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n21" id="wallg" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>#</td>
                                                     <td>Kebersihan siar / nat anak tangga </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n22" id="wall15" class="form-control" >
                                                     </td>
                                                     <td>0.5</td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n23" id="wall16" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n24" id="wallh" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>#</td>
                                                     <td>Kualitas pasangan anak tangga </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n25" id="wall17" class="form-control" >
                                                     </td>
                                                     <td>0.5</td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n26" id="wall18" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n27" id="walli" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
