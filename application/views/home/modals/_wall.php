@@ -50,11 +50,11 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="1">A</th>
-                                                    <th class="align-middle text-center" style="width:65%;" rowspan="9">OVERALL OF APPEARANCE/VISUAL (SUBJECTIVE) <br> PENILAIAN 0-3, JIKA PENILAIAN  (0=0 POINT),(1=0,33 POINT),(2=0,67 POINT) DAN (3=1 POINT)</th>
+                                                    <th class="align-middle text-center" style="width:10%;" rowspan="1">A</th>
+                                                    <th class="align-middle text-center" style="width:40%;" rowspan="9">OVERALL OF APPEARANCE/VISUAL (SUBJECTIVE) <br> PENILAIAN 0-3, JIKA PENILAIAN  (0=0 POINT),(1=0,33 POINT),(2=0,67 POINT) DAN (3=1 POINT)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="9">Nominal size (Kesalahan)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="9">Score</th>
-                                                    <th class="align-middle text-center" style="width:5%;"  rowspan="9">Actual value (point)</th>
+                                                    <th class="align-middle text-center" style="width:9%;"  rowspan="9">Actual value (point)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="9">Calculation </th>
                                                 </tr>
 
@@ -64,84 +64,84 @@
                                                     <td>Wall A</td>
                                                     <td>Kebersihan pasangan keramik  </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n1" id="wall1" class="form-control" >
                                                     </td>
                                                     <td>2</td>
-                                                    <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="max-width:50px;">
+                                                        <input type="text" name="n2" id="wall2" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n3" id="walla" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>#</td>
                                                     <td>Kebersihan sudut/tepi pasangan keramik </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n4" id="wall3" class="form-control" >
                                                     </td>
                                                     <td>2</td>
-                                                    <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="max-width:30px;">
+                                                        <input type="text"  name="n5" id="wall4" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n6" id="wallb" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>#</td>
                                                     <td>Kualitas gambar Gunungan/daun </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n7" id="wall5" class="form-control" >
                                                     </td>
                                                     <td>2</td>
-                                                    <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="max-width:30px;">
+                                                        <input type="text"  name="n8" id="wall6"  class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n9" id="wallc"  class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>#</td>
                                                     <td>kualitas gambar pendopo </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n10" id="wall7" class="form-control" >
                                                     </td>
                                                     <td>1</td>
-                                                    <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="max-width:30px;">
+                                                        <input type="text"name="n11" id="wall8" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n12" id="walld" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>#</td>
                                                     <td>Kualitas nat atau siar </td>
                                                     <td style="max-width:30px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n13" id="wall9" class="form-control" >
                                                     </td>
                                                     <td>1</td>
-                                                    <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="max-width:30px;">
+                                                        <input type="text" name="n14" id="wall10" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n15" id="walle" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Floor</td>
                                                     <td>Kualitas pasangan sudut perstek  </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n16" id="wall11" class="form-control" >
                                                     </td>
                                                     <td>0.5</td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n17" id="wall12" class="form-control" >
                                                     </td>
                                                     <td style="max-width:10px;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n18" id="wallf" class="form-control" >
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -193,11 +193,11 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="1">B</th>
-                                                    <th class="align-middle text-center" style="width:65%;" rowspan="7">CUTTING/POTONGAN (SUBJECTIVE) <br> PENILAIAN 0-3, JIKA PENILAIAN  (0=0 POINT),(1=0,33 POINT),(2=0,67 POINT) DAN (3=1 POINT)</th>
+                                                    <th class="align-middle text-center" style="width:10%;" rowspan="1">B</th>
+                                                    <th class="align-middle text-center" style="width:40%;" rowspan="7">CUTTING/POTONGAN (SUBJECTIVE) <br> PENILAIAN 0-3, JIKA PENILAIAN  (0=0 POINT),(1=0,33 POINT),(2=0,67 POINT) DAN (3=1 POINT)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Nominal size (Kesalahan)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Score</th>
-                                                    <th class="align-middle text-center" style="width:5%;" rowspan="7">Actual value (point)</th>
+                                                    <th class="align-middle text-center" style="width:9%;" rowspan="7">Actual value (point)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Calculation </th>
                                                 </tr>
 
@@ -307,11 +307,11 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="1">C</th>
-                                                    <th class="align-middle text-center" style="width:65%;" rowspan="7">LEVELING/DATAR (OBJECTIVE) <br> PENILAIAN SETIAP KESALAHAN 1 MM DIKURANGI 1 POINT (JIKA KESALAHAN 1 MM MAKA NILAINYA 0,9 POINT), KESALAHAN LEBIH DARI 5 MM MAKA NILAI DITETAPKAN 0,2 POINT</th>
+                                                    <th class="align-middle text-center" style="width:10%;" rowspan="1">C</th>
+                                                    <th class="align-middle text-center" style="width:40%;" rowspan="7">LEVELING/DATAR (OBJECTIVE) <br> PENILAIAN SETIAP KESALAHAN 1 MM DIKURANGI 1 POINT (JIKA KESALAHAN 1 MM MAKA NILAINYA 0,9 POINT), KESALAHAN LEBIH DARI 5 MM MAKA NILAI DITETAPKAN 0,2 POINT</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Nominal size (Kesalahan)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Score</th>
-                                                    <th class="align-middle text-center" style="width:5%;" rowspan="7">Actual value (point)</th>
+                                                    <th class="align-middle text-center" style="width:9%;" rowspan="7">Actual value (point)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Calculation </th>
                                                 </tr>
 
@@ -421,11 +421,11 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="1">D</th>
-                                                    <th class="align-middle text-center" style="width:65%;" rowspan="8">PLUMB/TEGAK (OBJECTIVE) <br> PENILAIAN SETIAP KESALAHAN 1 MM DIKURANGI 1 POINT (JIKA KESALAHAN 1 MM MAKA NILAINYA 0,9 POINT), KESALAHAN LEBIH DARI 5 MM MAKA NILAI DITETAPKAN 0,2 POINT</th>
+                                                    <th class="align-middle text-center" style="width:10%;" rowspan="1">D</th>
+                                                    <th class="align-middle text-center" style="width:40%;" rowspan="8">PLUMB/TEGAK (OBJECTIVE) <br> PENILAIAN SETIAP KESALAHAN 1 MM DIKURANGI 1 POINT (JIKA KESALAHAN 1 MM MAKA NILAINYA 0,9 POINT), KESALAHAN LEBIH DARI 5 MM MAKA NILAI DITETAPKAN 0,2 POINT</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="8">Nominal size (Kesalahan)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="8">Score</th>
-                                                    <th class="align-middle text-center" style="width:5%;" rowspan="8">Actual value (point)</th>
+                                                    <th class="align-middle text-center" style="width:9%;" rowspan="8">Actual value (point)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="8">Calculation </th>
                                                 </tr>
 
@@ -549,11 +549,11 @@
                                          <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="1">E</th>
-                                                    <th class="align-middle text-center" style="width:65%;" rowspan="7">SQUARE/SIKU (OBJECTIVE) <br> PENILAIAN SETIAP KESALAHAN 1 MM DIKURANGI 1 POINT (JIKA KESALAHAN 1 MM MAKA NILAINYA 0,9 POINT), KESALAHAN LEBIH DARI 5 MM MAKA NILAI DITETAPKAN 0,2 POINT</th>
+                                                    <th class="align-middle text-center"style="width:10%;" rowspan="1">E</th>
+                                                    <th class="align-middle text-center" style="width:40%;" rowspan="7">SQUARE/SIKU (OBJECTIVE) <br> PENILAIAN SETIAP KESALAHAN 1 MM DIKURANGI 1 POINT (JIKA KESALAHAN 1 MM MAKA NILAINYA 0,9 POINT), KESALAHAN LEBIH DARI 5 MM MAKA NILAI DITETAPKAN 0,2 POINT</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Nominal size (Kesalahan)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Score</th>
-                                                    <th class="align-middle text-center" style="width:5%;" rowspan="7">Actual value (point)</th>
+                                                    <th class="align-middle text-center" style="width:9%;" rowspan="7">Actual value (point)</th>
                                                     <th class="align-middle text-center" style="width:5%;" rowspan="7">Calculation </th>
                                                 </tr>
 

@@ -52,8 +52,8 @@
 						<div class="invalid-feedback">
 							belum dipilih 
 						</div>
-					
 					</div>
+					
 					<input type="hidden" class="form-control" name="lomba_id" autocomplete="off" required="">
 
 					<div class="form-group mb-0">

@@ -8,7 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="keywords" content="Aplikasi Penilaian Lomba Karya Siswa"/>
-	<meta name="description" content="nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian."/>
+	<meta name="description" content="nilaiku adalah aplikasi Penilaian yang dibangun untuk membantu sekolah dalam melaksanakan penilaian."/>
 	<meta name="subject" content="Situs Pendidikan">
 	<meta name="copyright" content="Not Found Indonesia">
 	<meta name="language" content="Indonesia">
@@ -36,7 +36,7 @@
 	<meta name="rating" content="general" />
 	<meta name="spiders" content="all" />
 	<meta itemprop="name" content="Not Found Indonesia" />
-	<meta itemprop="description" content="nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian." />
+	<meta itemprop="description" content="nilaiku adalah aplikasi Penilaian yang dibangun untuk membantu sekolah dalam melaksanakan penilaian." />
 
 	<meta itemprop="image" content="<?= __img('logo_nilai.png');?>" />
 

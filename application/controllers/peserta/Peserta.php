@@ -11,6 +11,12 @@ class Peserta extends Admin_Controller {
 		$this->load->model('lomba/M_lomba', 'lomba');	
 	}
 
+	function get_peserta(){
+        $fullname=$this->input->post('fullname');
+		$data=$this->peserta->get_data_peserta($fullname);
+		echo json_encode($data);
+    }
+
 	function add_ajax_kab($id_prov)
 	{
     	$query = $this->db->get_where('wilayah_kabupaten',array('provinsi_id'=>$id_prov));
