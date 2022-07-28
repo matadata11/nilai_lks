@@ -386,20 +386,5 @@ function clock()
 	});
 </script>
 
-<script type="text/javascript">
-    $("#input36,#input37").keyup(function() {
-	var val36 = $('#input36').val(); 
-	var val37 = $('#input37').val(); 
-	var val16 = $('#input16').val(); 
-	var vala14 = $('#inputa14').val(); 
-	var valb39 = $('#inputb39').val(); 
-	var kali = Number(val36) * Number(val37);
-	var kali = Number(val16) + Number(vala14) + Number(valb39);
-	if ( val36!= "" && val37 != "" && val16 != "" && vala14 != "" && valb39 != "") {
-    $('#inputc').val(kali);
-	}
-})
-</script>
-
 </body>
 </html>
