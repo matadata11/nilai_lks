@@ -12,6 +12,7 @@ $route['edit-nilai'] 			= 'penilaian/Penilaian/update';
 $route['remove-nilai/(:num)']   = 'penilaian/Penilaian/destroy';
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
+$route['add-wall'] 			    = 'penilaian/Wall/store';
 // end
 
 // route peserta
