@@ -9,6 +9,7 @@ class Home extends Admin_Controller {
 		parent::__construct();
 		$this->load->model('peserta/M_peserta', 'peserta');
 		$this->load->model('juri/M_juri', 'juri');
+		$this->load->model('penilaian/M_nilai_it', 'nilai_it');
 	}
 	
 
@@ -16,6 +17,7 @@ class Home extends Admin_Controller {
 	{
 		$this->vars['peserta']	    = $this->peserta->getDataJuri();
 		$this->vars['juri']	    	= $this->juri->getData();
+		$this->vars['nilai']	    	= $this->nilai_it->getData();
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';

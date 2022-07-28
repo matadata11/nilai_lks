@@ -10,15 +10,15 @@
 			<div class="card card-hero">
 				<div class="card-header">
 					<div class="card-icon">
-					<i class="far fa-question-circle"></i>
+					<i class="fas fa-plus-circle"></i>
 					</div>
-					<a href="#add" data-toggle="modal" style="color:#fff;"><h5>Mata Lomba <b><?=__session('bidang')?></b></h5></a>
+					<a href="#add"  data-toggle="modal" style="color:#fff;"><h5>Mata Lomba <b><?=__session('bidang')?></b></h5></a>
 					<!-- <div class="card-description">Mata Lomba <b><?=__session('bidang')?></b></div> -->
 				</div>
-				<!-- <div class="card-body p-0">
+				<div class="card-body p-0">
 					<div class="tickets-list">
-					<?php foreach($peserta as $row): ?>
-					<a href="#add"  data-toggle="modal" class="ticket-item">
+					<!-- <?php foreach($peserta as $row): ?>
+					<a href="#add<?=$row['id_peserta']?>"  data-toggle="modal" class="ticket-item">
 						<div class="ticket-title">
 						<h4><?=$row['fullname']?></h4>
 						</div>
@@ -32,9 +32,9 @@
 					
 					<a href="features-tickets.html" class="ticket-item ticket-more">
 						View All <i class="fas fa-chevron-right"></i>
-					</a>
-					</div>
-				</div> -->
+					</a>-->
+					</div> 
+				</div>
 			</div>
 		</div>
 
@@ -50,19 +50,21 @@
 					<div class="table-responsive table-invoice">
 					<table class="table table-striped">
 						<tr>
-							<th>Mata Lomba</th>
-							<th>Nama</th>
-							<th>Total Nilai</th>
-							<th>Action</th>
+							<th class="text-center">Nama</th>
+							<th class="text-center">Sekolah</th>
+							<th class="text-center">Total Nilai <br> (Modul A + Modul B + Modul C)</th>
+							<th class="text-center">Action</th>
 						</tr>
+						<?php  foreach($nilai as $row): ?>
 						<tr>
-							<td><a href="#">INV-87239</a></td>
-							<td class="font-weight-600">Kusnadi</td>
-							<td><div class="badge badge-warning">Unpaid</div></td>
-							<td>
-								<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Lihat</a>
+							<td class="text-center"><a href="#"><?=$row['peserta']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['total']?></div></td>
+							<td class="text-center">
+								<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
 							</td>
 						</tr>
+						<?php endforeach; ?>
 					</table>
 					</div>
 				</div>

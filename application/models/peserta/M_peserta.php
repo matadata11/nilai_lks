@@ -36,9 +36,8 @@ class M_peserta extends CI_Model {
 
 	public function getDataJuri()
 	{
-		$this->db->order_by('bidang', 'ASC');
+		$this->db->order_by('id_peserta', 'ASC');
 		// $this->db->where('bidang', $this->session->userdata('bidang'));
-		$query = $this->db->order_by('id_peserta', 'DESC');
         $query = $this->db->get_where($this->_table, ['bidang' => __session('bidang')]);
         return $query->result_array();
 	}
@@ -53,6 +52,23 @@ class M_peserta extends CI_Model {
         $query = $this->db->delete($this->_table, ['id_peserta' => __uri(2)]);
         return $query;
     }
+
+	function get_data_peserta($fullname){
+		$hsl=$this->db->query("SELECT * FROM mt_peserta WHERE fullname='$fullname'");
+		if($hsl->num_rows()>0){
+			foreach ($hsl->result() as $data) {
+				$hasil=array(
+					'fullname' 			=> $data->fullname,
+					'sekolah_asal' 			=> $data->sekolah_asal,
+					// 'satuan' 		=> $data->satuan,
+					// 'harga_jual'	=> $data->harga_jual,
+					// 'stok' 			=> $data->stok,
+				
+					);
+			}
+		}
+		return $hasil;
+	}
 
 }
 
