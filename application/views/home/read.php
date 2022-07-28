@@ -47,14 +47,18 @@
 					</div>
 				</div>
 				<div class="card-body p-0">
+
+				<!-- bidang IT Network -->
+				
 					<div class="table-responsive table-invoice">
 					<table class="table table-striped">
 						<tr>
 							<th class="text-center">Nama</th>
 							<th class="text-center">Sekolah</th>
-							<th class="text-center">Total Nilai <br> (Modul A + Modul B + Modul C)</th>
+							<th class="text-center">Total Nilai</th>
 							<th class="text-center">Action</th>
 						</tr>
+						<?php if ($this->session->userdata('bidang') == __session('bidang') ) { ?>
 						<?php  foreach($nilai as $row): ?>
 						<tr>
 							<td class="text-center"><a href="#"><?=$row['peserta']?></a></td>
@@ -65,7 +69,26 @@
 							</td>
 						</tr>
 						<?php endforeach; ?>
+						<?php } ?>
+
+						<!-- wall -->
+						<?php if ($this->session->userdata('bidang') == __session('bidang') ) { ?>
+						<?php  foreach($wall as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['peserta']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['total']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_wall'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<?php } ?>
+						<!-- end wall -->
 					</table>
+					<!-- end IT Network -->
+
+
 					</div>
 				</div>
 			</div>

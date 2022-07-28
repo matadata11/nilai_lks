@@ -183,6 +183,7 @@
     <script src="<?=__js('stisla.js')?>"></script> 
     <script src="<?=__js('dataTables.bootstrap4.min.js')?>"></script> 
     <script src="<?=__js('itnetwork.js')?>"></script> 
+    <script src="<?=__js('wall.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){

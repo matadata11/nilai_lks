@@ -23,6 +23,7 @@
                                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">MODUL C</a>
                                 </li> -->
                             </ul>
+                            <h5 class="mt-4 mb-0"><small>Rete Poin 1 - 3</small></h5>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
