@@ -59,6 +59,7 @@ class Nilai_it extends Admin_Controller {
             $n43 					    = $this->input->post('n43', TRUE);
             $n44 					    = $this->input->post('n44', TRUE);
             $total 					    = $this->input->post('total', TRUE);
+            $admin 					    = $this->input->post('admin', TRUE);
 
             $data = [
                 'peserta'           	=> $peserta,
@@ -107,10 +108,11 @@ class Nilai_it extends Admin_Controller {
                 'n43'           	        => $n43,
                 'n44'           	        => $n44,
                 'total'           	        => $total,
+                'admin'           	        => $admin,
                 'tanggal'    	=> date('Y-m-d')
             ];
         }
-        helper_log("add", "menambah folder");
+        helper_log("add", "Menambah Penilaian");
         $save = $this->nilai_it->entry($data);
         if($save){
             $this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');

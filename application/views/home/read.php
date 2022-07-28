@@ -1,7 +1,7 @@
 <section class="section">
 	<div class="section-header">
         <div class="col-12">
-		<marquee direction="left" scrollamount="5" align="center">Nilaiku adalah aplikasi pemilihan umum yang dibangun untuk membantu sekolah dalam melaksanakan penilaian.</marquee>
+		<marquee direction="left" scrollamount="5" align="center">Nilaiku adalah aplikasi penilaian yang dibangun untuk membantu sekolah dalam melaksanakan penilaian.</marquee>
 		</div>
     </div>
 
@@ -61,7 +61,7 @@
 							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
 							<td class="text-center"><div class="badge badge-warning"><?=$row['total']?></div></td>
 							<td class="text-center">
-								<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+								<a href="#lihat<?=$row['id_it'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
 							</td>
 						</tr>
 						<?php endforeach; ?>

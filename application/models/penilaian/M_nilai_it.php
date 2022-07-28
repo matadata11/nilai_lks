@@ -9,7 +9,8 @@ class M_nilai_it extends CI_Model {
     public function getData()
     {
         $this->db->order_by('total', 'DESC');
-        return $this->db->get($this->_table)->result_array();
+        $query = $this->db->get_where($this->_table, ['admin' => __session('fullname')]);
+        return $query->result_array();
     }
 
     public function entry($data){
