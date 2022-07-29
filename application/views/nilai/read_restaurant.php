@@ -26,7 +26,7 @@
                             <tr>
                                 <td><?=$no++;?></td>
                                 <td><?=$row->fullname;?></td>
-                                <td><?=$row->j_cabinet;?> Poin</td>
+                                <td><?=$row->j_restaurant;?> Poin</td>
                                 <td><?=indo_date($row->tanggal)?></td>
                                 <!-- <td width="5%" class="text-center">
                                     <a href="#list<?=$row->id_cabinet;?>" data-toggle="modal" class="btn btn-sm btn-info"><i class="fas fa-fw fa-print"></i> Pr</a>

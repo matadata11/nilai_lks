@@ -49,25 +49,25 @@
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-check-double"></i><span>Rekap Penilaian</span></a>
 				<ul class="dropdown-menu">
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">IT Network System Administration</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Automobile Technology</a></li>
+					<li><a class="nav-link" href="<?=site_url('mobile')?>">Automobile Technology</a></li>
 					<li><a class="nav-link" href="<?=site_url('cabinet')?>">Cabinet Making</a></li>
 					<li><a class="nav-link" href="<?=site_url('cloud')?>">Cloud Computing</a></li>
 					<li><a class="nav-link" href="<?=site_url('electrical')?>">Electrical Installations</a></li>
 					<li><a class="nav-link" href="<?=site_url('electronics')?>">Electronics</a></li>
 					<li><a class="nav-link" href="<?=site_url('farmacy')?>">Farmacy</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Fashion Technology</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Graphic Design Technology</a></li>
+					<li><a class="nav-link" href="<?=site_url('fashion')?>">Fashion Technology</a></li>
+					<li><a class="nav-link" href="<?=site_url('design')?>">Graphic Design Technology</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Hairdressing</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Landscape and Gardening</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Livestock Technology</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Mechanical Engineering</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Motorcycle Repair and Maintenance</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Nautica</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Pemasaran Daring</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Refrigeration and Air Conditioning</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Restaurant Service</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Wall and Floor Tilling</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Welding</a></li>
+					<li><a class="nav-link" href="<?=site_url('landscape')?>">Landscape and Gardening</a></li>
+					<li><a class="nav-link" href="<?=site_url('livestock')?>">Livestock Technology</a></li>
+					<li><a class="nav-link" href="<?=site_url('mechanical')?>">Mechanical Engineering</a></li>
+					<li><a class="nav-link" href="<?=site_url('motor')?>">Motorcycle Repair and Maintenance</a></li>
+					<li><a class="nav-link" href="<?=site_url('nautica')?>">Nautica</a></li>
+					<li><a class="nav-link" href="<?=site_url('pemasaran')?>">Pemasaran Daring</a></li>
+					<li><a class="nav-link" href="<?=site_url('refrigeration')?>">Refrigeration and Air Conditioning</a></li>
+					<li><a class="nav-link" href="<?=site_url('restaurant')?>">Restaurant Service</a></li>
+					<li><a class="nav-link" href="<?=site_url('wall')?>">Wall and Floor Tilling</a></li>
+					<li><a class="nav-link" href="<?=site_url('welding')?>">Welding</a></li>
 				</ul>
 			</li> 
 			<?php } ?>

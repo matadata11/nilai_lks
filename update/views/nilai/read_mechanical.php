@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Pemasaran Daring (Online Marketing)</h1>
+        <h1>Mechanical Engineering CAD</h1>
         <div class="ml-auto">
             <a href="#add" data-toggle="modal" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-plus"></i> Tambah</a>
             <a href="#import" data-toggle="modal" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-file-import"></i> Import</a>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td><?=$no++;?></td>
                                 <td><?=$row->fullname;?></td>
-                                <td><?=$row->j_pemasaran;?> Poin</td>
+                                <td><?=$row->j_cabinet;?> Poin</td>
                                 <td><?=indo_date($row->tanggal)?></td>
                                 <!-- <td width="5%" class="text-center">
                                     <a href="#list<?=$row->id_cabinet;?>" data-toggle="modal" class="btn btn-sm btn-info"><i class="fas fa-fw fa-print"></i> Pr</a>
