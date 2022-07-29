@@ -18,6 +18,7 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_farmacy', 'farmacy');
 		$this->load->model('penilaian/M_fashion', 'fashion');
 		$this->load->model('penilaian/M_landscape', 'landscape');
+		$this->load->model('penilaian/M_livestock', 'livestock');
 	}
 	
 
@@ -111,9 +112,21 @@ class Penilaian extends Admin_Controller {
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_fashion';
+        $this->vars['content']  	= 'nilai/read_landscape';
         $this->load->view('backend/main', $this->vars);
 	}
+
+
+	public function livestock()
+	{
+		$this->vars['total']	    = $this->livestock->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_livestock';
+        $this->load->view('backend/main', $this->vars);
+	}
+
 
 	public function store()
     {
