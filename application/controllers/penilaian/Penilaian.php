@@ -17,6 +17,7 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_electronics', 'electronics');
 		$this->load->model('penilaian/M_farmacy', 'farmacy');
 		$this->load->model('penilaian/M_fashion', 'fashion');
+		$this->load->model('penilaian/M_landscape', 'landscape');
 	}
 	
 
@@ -97,6 +98,16 @@ class Penilaian extends Admin_Controller {
     public function fashion()
 	{
 		$this->vars['total']	    = $this->fashion->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_fashion';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function landscape()
+	{
+		$this->vars['total']	    = $this->landscape->getTotal();
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';

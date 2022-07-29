@@ -14,8 +14,9 @@
         <!-- Menu -->
         <ul class="sidebar-menu">
 		
+		<?php if ($this->session->userdata('level') == 'Super' OR $this->session->userdata('level') == 'Admin') { ?>
 			<li><a class="nav-link" href="<?=site_url('dashboard')?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-			
+			<?php } ?>
 			<!-- wilayah -->
 			<?php if ($this->session->userdata('level') == 'Super') { ?>
             <li class="nav-item dropdown">
@@ -29,6 +30,7 @@
 			<?php } ?>
             <!-- end -->
 
+			<?php if ($this->session->userdata('level') == 'Super' OR $this->session->userdata('level') == 'Admin') { ?>
 			<!-- mata lomba -->
             <li class="nav-item dropdown">
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-fw fa-bullseye"></i><span>Master Data</span></a>
@@ -38,6 +40,7 @@
 					<li><a class="nav-link" href="<?=site_url('peserta')?>">Data Peserta</a></li>
 				</ul>
 			</li>
+			<?php } ?>
             <!-- end -->
 
 			<?php if ($this->session->userdata('level') == 'Super') { ?>
