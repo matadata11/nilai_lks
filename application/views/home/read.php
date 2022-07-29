@@ -133,6 +133,16 @@
 						<?php endforeach; ?>
 						<!-- end -->
 
+<<<<<<< HEAD
+						<!-- electronics -->
+						<?php  foreach($electronics as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_electronics']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_electronics'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+=======
 						<!-- fashion -->
 						<?php  foreach($fashion as $row): ?>
 						<tr>
@@ -141,11 +151,24 @@
 							<td class="text-center"><div class="badge badge-warning"><?=$row['j_fashion']?></div></td>
 							<td class="text-center">
 								<a href="#lihat<?=$row['id_fashion'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 							</td>
 						</tr>
 						<?php endforeach; ?>
 						<!-- end -->
 
+<<<<<<< HEAD
+						<?php  foreach($farmacy as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_farmacy']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_farmacy'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+=======
 						<!-- landscape -->
 						<?php  foreach($fashion as $row): ?>
 						<tr>
@@ -158,6 +181,7 @@
 						</tr>
 						<?php endforeach; ?>
 						<!-- end -->
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 					</table>
 
 

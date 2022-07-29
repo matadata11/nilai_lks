@@ -11,9 +11,14 @@ $route['cloud'] 			    = 'penilaian/Penilaian/cloud';
 $route['cabinet'] 			    = 'penilaian/Penilaian/cabinet';
 $route['electrical'] 			= 'penilaian/Penilaian/electrical';
 $route['mobile'] 			    = 'penilaian/Penilaian/mobile';
+<<<<<<< HEAD
+$route['electronics'] 			= 'penilaian/Penilaian/Electronics';
+$route['farmacy'] 			= 'penilaian/Penilaian/farmacy';
+=======
 $route['Electronics'] 			= 'penilaian/Penilaian/Electronics';
 $route['fashion'] 			    = 'penilaian/Penilaian/Fashion';
 $route['landscape'] 			= 'penilaian/Penilaian/Landscape';
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
@@ -23,8 +28,12 @@ $route['add-cabinet'] 			= 'penilaian/Cabinet/store';
 $route['add-electrical'] 		= 'penilaian/Electrical/store';
 $route['add-mobile'] 		    = 'penilaian/Mobil/store';
 $route['add-electronics'] 		= 'penilaian/Electronics/store';
+<<<<<<< HEAD
+$route['add-farmacy'] 		    = 'penilaian/farmacy/store';
+=======
 $route['add-fashion'] 		    = 'penilaian/Fashion/store';
 $route['add-landscape'] 		= 'penilaian/Landscape/store';
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 // end
 
 // route peserta
@@ -32,6 +41,7 @@ $route['peserta'] 				= 'peserta/Peserta';
 $route['add-peserta'] 			= 'peserta/Peserta/store';
 $route['edit-peserta'] 			= 'peserta/Peserta/update';
 $route['remove-peserta/(:num)'] = 'peserta/Peserta/destroy';
+$route['import-peserta']        = 'peserta/Peserta/import_excel';
 
 // route mata lomba
 $route['mata-lomba'] 			= 'lomba/Mata_lomba';
@@ -53,6 +63,13 @@ $route['patch']                = 'setting/Master_patch';
 $route['patching']             = 'setting/Master_patch/patchsystem';
 $route['public']               = 'setting/Master_patch/public';
 // end
+
+// route pengguna
+$route['pengguna']                 		= 'setting/Pengguna';
+$route['add-pengguna']                 	= 'setting/Pengguna/register';
+$route['edit-user']                   	= 'setting/Pengguna/update';
+$route['edit-useradmin']                = 'setting/Pengguna/updateadmin';
+$route['hapus-user/(:num)']           	= 'setting/Pengguna/destroy';
 
 
 $route['default_controller'] 	= 'welcome';

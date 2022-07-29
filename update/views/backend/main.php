@@ -182,7 +182,14 @@
     <script src="<?=__js('jquery.nicescroll.min.js')?>"></script> 
     <script src="<?=__js('stisla.js')?>"></script> 
     <script src="<?=__js('dataTables.bootstrap4.min.js')?>"></script> 
-    <script src="<?=__js('itnetwork.js')?>"></script> 
+    <script src="<?=__js('network.js')?>"></script> 
+    <script src="<?=__js('wall.js')?>"></script> 
+    <script src="<?=__js('cloud.js')?>"></script> 
+    <script src="<?=__js('cabinet.js')?>"></script> 
+    <script src="<?=__js('electrical.js')?>"></script> 
+    <script src="<?=__js('mobile.js')?>"></script> 
+    <script src="<?=__js('Electronics.js')?>"></script> 
+    <script src="<?=__js('farmacy.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){
@@ -359,17 +366,17 @@ function clock()
 
 <script type="text/javascript">
 	$(document).ready(function(){
-			$('#fullname').on('input',function(){
+			$('#id_peserta').on('input',function(){
 			
-			var fullname=$(this).val();
+			var id_peserta=$(this).val();
 			$.ajax({
 				type : "POST",
 				url  : "<?php echo base_url('peserta/Peserta/get_peserta')?>",
 				dataType : "JSON",
-				data : {fullname: fullname},
+				data : {id_peserta: id_peserta},
 				cache:false,
 				success: function(data){
-					$.each(data,function(fullname, sekolah_asal){
+					$.each(data,function(id_peserta, sekolah_asal){
 						$('[name="sekolah_asal"]').val(data.sekolah_asal);
 						// $('[name="satuan"]').val(data.satuan);
 						// $('[name="harga"]').val(data.harga_jual);
@@ -385,20 +392,6 @@ function clock()
 	});
 </script>
 
-<script type="text/javascript">
-    $("#input36,#input37").keyup(function() {
-	var val36 = $('#input36').val(); 
-	var val37 = $('#input37').val(); 
-	var val16 = $('#input16').val(); 
-	var vala14 = $('#inputa14').val(); 
-	var valb39 = $('#inputb39').val(); 
-	var kali = Number(val36) * Number(val37);
-	var kali = Number(val16) + Number(vala14) + Number(valb39);
-	if ( val36!= "" && val37 != "" && val16 != "" && vala14 != "" && valb39 != "") {
-    $('#inputc').val(kali);
-	}
-})
-</script>
 
 </body>
 </html>

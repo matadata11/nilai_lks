@@ -1,20 +1,5 @@
 <!-- start page title -->
-<div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0 font-size-18">Data Pengguna</h4></h4>
 
-            <div class="page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Master Data</a></li>
-                    <li class="breadcrumb-item active">Data Pengguna</li>
-                </ol>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- end page title -->
 
 <?php echo $this->session->set_flashdata('notif_true'); ?>
 
@@ -56,12 +41,14 @@
                                 <i class="bx bx-download align-middle me-1"></i> Export
                             </a> -->
 
-                            <button class="btn btn-outline-danger" type="button" data-bs-toggle="modal"  data-bs-target="#import" style="position:relative;top:-1.5rem;margin-bottom:1rem;"><i class="bx bx-upload align-middle me-1"></i> Import</button>
+                            <button class="btn btn-outline-danger mt-4" type="button" data-bs-toggle="modal"  data-bs-target="#import" style="position:relative;top:-1.5rem;margin-bottom:1rem;"><i class="bx bx-upload align-middle me-1"></i> Import</button>
 							
 
-                            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"  data-bs-target="#add" style="position:relative;top:-1.5rem;margin-bottom:1rem;">
+                            <a href="#add" data-toggle="modal">
+							<button class="btn btn-outline-info mt-4" type="button" style="position:relative;top:-1.5rem;margin-bottom:1rem;">
                                 <i class="bx bx-plus align-middle me-1"></i> Tambah
                             </button>
+							</a>
 							<?php } ?>
                         </div>
                     </div>
@@ -71,11 +58,10 @@
 					<thead>
 					<tr>
 						<th class="text-center align-middle">#</th>
-						<th class="text-center align-middle">Admin</th>
+						<th class="text-center align-middle">Nama</th>
 						<th class="text-center align-middle">Level</th>
-						<th class="text-center align-middle">Nama Lengkap</th>
 						<th class="text-center align-middle">Email</th>
-						<th class="text-center align-middle">Satatus</th>
+						<th class="text-center align-middle">status</th>
 						<th class="text-center align-middle">Aksi</th>
 					</tr>
 					</thead>
@@ -85,9 +71,8 @@
 					<?php $no=1; foreach($useradmin as $usr): ?>
 					<tr>
 						<td class="text-center align-middle"><?=$no++;?></td>
-						<td class="text-center align-middle"><?= $usr['admin'];?></td>
-						<td class="text-center align-middle"><?= $usr['level'];?></td>
 						<td class="text-center align-middle"><?= $usr['fullname'];?></td>
+						<td class="text-center align-middle"><?= $usr['level'];?></td>
 						<td class="text-center align-middle"><?= $usr['email'];?></td>
 
 						<?php if($usr['is_active'] == '1' ): ?>

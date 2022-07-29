@@ -14,8 +14,13 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_cabinet', 'cabinet');
 		$this->load->model('penilaian/M_electrical', 'electrical');
 		$this->load->model('penilaian/M_mobile', 'mobile');
+<<<<<<< HEAD
+		$this->load->model('penilaian/M_electronics', 'electronics');
+		$this->load->model('penilaian/M_farmacy', 'farmacy');
+=======
 		$this->load->model('penilaian/M_fashion', 'fashion');
 		$this->load->model('penilaian/M_landscape', 'landscape');
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 	}
 	
 
@@ -73,13 +78,23 @@ class Penilaian extends Admin_Controller {
         $this->load->view('backend/main', $this->vars);
 	}
 
-    public function Electronics()
+    public function electronics()
 	{
-		$this->vars['total']	    = $this->mobile->getTotal();
+		$this->vars['total']	    = $this->electronics->getTotal();
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_mobile';
+        $this->vars['content']  	= 'nilai/read_electronics';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function farmacy()
+	{
+		$this->vars['total']	    = $this->farmacy->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_electronics';
         $this->load->view('backend/main', $this->vars);
 	}
 

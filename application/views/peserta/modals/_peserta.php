@@ -382,3 +382,35 @@
 	</div>
 </div>
 <?php endforeach; ?>
+
+<div class="modal fade" id="import"  tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Import Data</h5>
+            </div>
+            <div class="modal-body">
+                <div class="my-2">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p>Silahkan download template data berikut</p>
+                            <a href="<?= site_url('public/excel/format_peserta.xlsx') ?>" download class="btn btn-block btn-primary"><i class="fas fa-download"></i> Download Format</a><br>
+                        </div>
+                    </div>
+                </div>
+                <form method="post" action="<?= site_url('import-peserta') ?>" enctype="multipart/form-data">
+                    
+                    <div class="form-group">
+                        <label>Pilih File Excel</label>
+                        <input type="file" class="form-control" name="dataexcel">
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn btn-outline-danger aves-effect waves-ligh" class="close" data-dismiss="modal" aria-label="Close"> <i class="bx bx-share"></i> Batal</button>
+                        <button type="submit" name="submit" class="btn btn-outline-info waves-effect waves-light"><i class="bx bx-upload"></i> Import</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
