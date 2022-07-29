@@ -1,16 +1,16 @@
 <!-- tambah -->
 <?php if ($this->session->userdata('fullname') == __session('fullname')) { ?>
 <div class="modal fade" id="add" tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width:110%;" role="document">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:90%;" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Lamdscape and Gardening</h5>
+                <h5 class="modal-title">Landscape and Gardening</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span class="text-dark" aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-landscape')?>">
+            <form method="post" action="<?=site_url('add-list')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -24,7 +24,7 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
-                                        <table class="table table-bordered table-hover table-sm" id="" style="width:120%;">
+                                        <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle text-center" rowspan="2">Opsi</th>
@@ -44,48 +44,41 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:5px;">
+                                                <td class="align-middle text-center" style="max-width:10px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                    <td style="width:18%;">
-                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
-                                                            <option value="">pilih:</option>
-                                                            <?php foreach($peserta as $row): ?>
-                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
-                                                            <?php endforeach; ?>
-                                                        </select>
+                                                    <td  style="width:15%;">
+                                                        <input type="text" class="form-control" >
                                                     </td>
-                                                    <td style="width:20%;">
-                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
-
-                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input1" id="input1" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input2" id="input2" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input3" id="input3" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input4" id="input4" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input5" id="input5" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input6" id="input6" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input7" id="input7" class="form-control" >
-                                                    </td>
-                                                    <td style="width:5%;">
-                                                        <input type="text" name="input8" id="input8" class="form-control" >
+                                                    <td style="width:15%;">
+                                                        <input type="text" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" name="j_input" id="inputa"class="form-control" >
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
+                                                    </td>
+                                                    <td style="width:8%;">
+                                                        <input type="text" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

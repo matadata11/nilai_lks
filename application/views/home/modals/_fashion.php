@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-fashion')?>">
+            <form method="post" action="<?=site_url('add-list')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -41,27 +41,20 @@
                                                 <td class="align-middle text-center" style="max-width:10px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                    <td style="width:15%;">
-                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
-                                                            <option value="">pilih:</option>
-                                                            <?php foreach($peserta as $row): ?>
-                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
-                                                            <?php endforeach; ?>
-                                                        </select>
+                                                <td style="width:20%;">
+                                                        <input type="text" class="form-control" >
                                                     </td>
-                                                    <td style="width:15%;">
-                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
-
-                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
+                                                    <td style="width:20%;">
+                                                        <input type="text" class="form-control" >
                                                     </td>
                                                     <td  style="width:15%;">
-                                                        <input type="text" name="fashion1" id="fashion1" class="form-control" >
+                                                        <input type="text" class="form-control" >
                                                     </td>
                                                     <td  style="width:15%;">
-                                                        <input type="text" name="fashion2" id="fashion2" class="form-control" >
+                                                        <input type="text" class="form-control" >
                                                     </td>
                                                     <td  style="width:15%;">
-                                                        <input type="text" name="j_fashion" id="fashiona" class="form-control" >
+                                                        <input type="text" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
