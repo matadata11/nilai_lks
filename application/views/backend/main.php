@@ -324,7 +324,6 @@ function clock()
 						$('[name="lomba_id"]').val(data.id_lomba);
 						// $('[name="satuan"]').val(data.satuan);
 						// $('[name="harga"]').val(data.harga_jual);
-						// $('[name="stok"]').val(data.stok);
 						
 					});
 					
