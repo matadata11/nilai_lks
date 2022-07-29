@@ -194,6 +194,7 @@
     <script src="<?=__js('landscape.js')?>"></script>  
     <script src="<?=__js('livestock.js')?>"></script> 
     <script src="<?=__js('mechanical.js')?>"></script> 
+    <script src="<?=__js('motor.js')?>"></script> 
     
 	<script>
     $(document).ready(function(){
