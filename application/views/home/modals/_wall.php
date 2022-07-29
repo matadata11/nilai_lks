@@ -61,31 +61,31 @@
                                                         <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">      
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n1" id="imput1" class="form-control" >
+                                                        <input type="text" name="n1" id="n1" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n2" id="imput2" class="form-control" >
+                                                        <input type="text" name="n2" id="n2" class="form-control" >
                                                     </td>
                                                     <td style="width:6%;">
-                                                        <input type="text" name="n3" id="imput3" class="form-control" >
+                                                        <input type="text" name="n3" id="n3" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n4" id="imput4" class="form-control" >
+                                                        <input type="text" name="n4" id="n4" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n5" id="imput5" class="form-control" >
+                                                        <input type="text" name="n5" id="n5" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n6" id="imput5" class="form-control" >
+                                                        <input type="text" name="n6" id="n6" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text"  name="n7" id="imput7" class="form-control" >
+                                                        <input type="text"  name="n7" id="n7" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n8" id="imput8" class="form-control" >
+                                                        <input type="text" name="n8" id="n8" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" name="j_wall" id="imputa" class="form-control" readonly>
+                                                        <input type="text" name="j_wall" id="na" class="form-control" readonly>
                                                     </td>
                                                 </tr>
                                             </tbody>

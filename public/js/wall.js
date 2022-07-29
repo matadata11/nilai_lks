@@ -1,20 +1,20 @@
-$("#imput1,#imput2,#imput3,#imput4,#imput5,#imput6,#imput7,#imput8").keyup(function() {
-    var val1 = $('#imput1').val(); 
-	var val2 = $('#imput2').val(); 
-	var val3 = $('#imput3').val(); 
-	var val4 = $('#imput4').val(); 
-	var val5 = $('#imput5').val(); 
-	var val6 = $('#imput6').val(); 
-	var val7 = $('#imput7').val(); 
-	var val8 = $('#imput8').val(); 
-
-	var kali = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8) ;
+$("#n1,#n2,#n23,#n4,#n5,#n6,#n7,#n8").keyup(function() {
+    var val1 = $('#n1').val(); 
+	var val2 = $('#n2').val(); 
+	var val3 = $('#n3').val(); 
+	var val4 = $('#n4').val(); 
+	var val5 = $('#n5').val(); 
+	var val6 = $('#n6').val(); 
+	var val7 = $('#n7').val(); 
+	var val8 = $('#n8').val(); 
 
 
-	if ( val1 != "" && val2 != "" && val3 != "" && val4 != "" && val5 != "" && val6 != "" && val7 != "" && val8 != "" ) 
-    
+
+
+	var kali = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8)  ;
+
+	if ( val1 != "" && val2 != "" && val3 != "" && val4 != "" && val5 != "" && val6 != "" && val7 != "" && val8 != ""   ) 
     {
-    $('#imputa').val(kali);
-
+    $('#na').val(kali);
 	}
 })
