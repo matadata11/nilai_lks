@@ -200,7 +200,6 @@
     <script src="<?=__js('refrigeration.js')?>"></script> 
     <script src="<?=__js('restaurant.js')?>"></script> 
     <script src="<?=__js('design.js')?>"></script> 
-    <script src="<?=__js('wall.js')?>"></script> 
     
 	<script>
     $(document).ready(function(){
