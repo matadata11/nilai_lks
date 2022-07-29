@@ -22,6 +22,7 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_livestock', 'livestock');
 		$this->load->model('penilaian/M_mechanical', 'mechanical');
 		$this->load->model('penilaian/M_motor', 'motor');
+		$this->load->model('penilaian/M_nautica', 'nautica');
 	}
 	
 
@@ -44,6 +45,7 @@ class Home extends Admin_Controller {
 		$this->vars['livestock']	= $this->livestock->getData();
 		$this->vars['mechanical']	= $this->mechanical->getData();
 		$this->vars['motor']	    = $this->motor->getData();
+		$this->vars['nautica']	    = $this->nautica->getData();
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';
