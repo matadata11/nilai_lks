@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-design')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">

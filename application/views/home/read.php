@@ -256,6 +256,17 @@
 						</tr>
 						<?php endforeach; ?>
 
+						<?php  foreach($design as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_design']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_design'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
 					</table>
 					</div>
 				</div>

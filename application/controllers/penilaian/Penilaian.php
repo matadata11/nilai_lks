@@ -25,6 +25,7 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_pemasaran', 'pemasaran');
 		$this->load->model('penilaian/M_refrigeration', 'refrigeration');
 		$this->load->model('penilaian/M_restaurant', 'restaurant');
+		$this->load->model('penilaian/M_design', 'design');
 	}
 	
 
@@ -160,7 +161,7 @@ class Penilaian extends Admin_Controller {
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_motor';
+        $this->vars['content']  	= 'nilai/read_nautica';
 		$this->load->view('backend/main', $this->vars);
     }
 
@@ -170,7 +171,7 @@ class Penilaian extends Admin_Controller {
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_motor';
+        $this->vars['content']  	= 'nilai/read_pemasaran';
 		$this->load->view('backend/main', $this->vars);
     }
 
@@ -180,7 +181,7 @@ class Penilaian extends Admin_Controller {
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_motor';
+        $this->vars['content']  	= 'nilai/read_refrigeration';
 		$this->load->view('backend/main', $this->vars);
     }
 
@@ -190,7 +191,17 @@ class Penilaian extends Admin_Controller {
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_motor';
+        $this->vars['content']  	= 'nilai/read_restaurant';
+		$this->load->view('backend/main', $this->vars);
+    }
+
+	public function design()
+	{
+		$this->vars['total']	    = $this->design->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_design';
 		$this->load->view('backend/main', $this->vars);
     }
 
