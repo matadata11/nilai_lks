@@ -61,10 +61,10 @@
                                                         <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape1" id="landscape1" class="form-control" >
+                                                        <input type="text" name="input1" id="input1" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape2" id="landscape2" class="form-control" >
+                                                        <input type="text" name="input2" id="input2" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
                                                         <input type="text" name="landscape3" id="landscape3" class="form-control" >
@@ -85,7 +85,7 @@
                                                         <input type="text" name="landscape8" id="landscape8" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" name="j_landscape" id="landscapea"class="form-control" >
+                                                        <input type="text" name="j_landscape" id="inputa"class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
