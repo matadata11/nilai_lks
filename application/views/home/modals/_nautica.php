@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-nautica')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -46,35 +46,42 @@
                                                 <td class="align-middle text-center" style="max-width:10px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                <td style="width:20%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:20%;">
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
                                                     <td style="width:20%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica1" id="nautica1" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica2" id="nautica2" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica3" id="nautica3" class="form-control" >
                                                     </td>
                                                     <td style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica4" id="nautica4" class="form-control" >
                                                     </td>
                                                     <td style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica5" id="nautica5" class="form-control" >
                                                     </td>
                                                     <td style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica6" id="nautica6" class="form-control" >
                                                     </td>
                                                     <td style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="nautica7" id="nautica7" class="form-control" >
                                                     </td>
                                                     <td style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_nautica" id="nauticaa" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
