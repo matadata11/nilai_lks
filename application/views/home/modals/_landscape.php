@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-dialog-centered" style="max-width:110%;" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Landscape and Gardening</h5>
+                <h5 class="modal-title">Lamdscape and Gardening</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span class="text-dark" aria-hidden="true">&times;</span>
                 </button>
@@ -67,25 +67,25 @@
                                                         <input type="text" name="input2" id="input2" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape3" id="landscape3" class="form-control" >
+                                                        <input type="text" name="input3" id="input3" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape4" id="landscape4" class="form-control" >
+                                                        <input type="text" name="input4" id="input4" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape5" id="landscape5" class="form-control" >
+                                                        <input type="text" name="input5" id="input5" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape6" id="landscape6" class="form-control" >
+                                                        <input type="text" name="input6" id="input6" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape7" id="landscape7" class="form-control" >
+                                                        <input type="text" name="input7" id="input7" class="form-control" >
                                                     </td>
                                                     <td style="width:5%;">
-                                                        <input type="text" name="landscape8" id="landscape8" class="form-control" >
+                                                        <input type="text" name="input8" id="input8" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" name="j_landscape" id="inputa"class="form-control" >
+                                                        <input type="text" name="j_input" id="inputa"class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

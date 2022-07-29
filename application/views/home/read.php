@@ -157,7 +157,7 @@
 						</tr>
 						<?php endforeach; ?>
 
-						<?php  foreach($fashion as $row): ?>
+						<?php  foreach($landscape as $row): ?>
 						<tr>
 							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
 							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>

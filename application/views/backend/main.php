@@ -189,11 +189,9 @@
     <script src="<?=__js('electrical.js')?>"></script> 
     <script src="<?=__js('mobile.js')?>"></script> 
     <script src="<?=__js('Electronics.js')?>"></script> 
-<<<<<<< HEAD
     <script src="<?=__js('farmacy.js')?>"></script> 
-=======
     <script src="<?=__js('fashion.js')?>"></script> 
->>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
+    <script src="<?=__js('landscape.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){
