@@ -214,8 +214,6 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_wall';
-<<<<<<< HEAD
-=======
 		$this->load->view('backend/main', $this->vars);
     }
 
@@ -226,7 +224,6 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_welding';
->>>>>>> fdca46ec892d2c96ab1f979f00cd4fe08900c66a
 		$this->load->view('backend/main', $this->vars);
     }
 
