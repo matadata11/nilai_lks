@@ -42,23 +42,29 @@
                                                 <td class="align-middle text-center" style="max-width:8px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                <td style="width:20%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:20%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:15%;">
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
+                                                        <td style="width:15%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="restaurant1" id="restaurant1" class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="restaurant2" id="restaurant2" class="form-control" >
                                                     </td>
                                                     <td style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="restaurant3" id="restaurant3" class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_restaurant" id="restauranta" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
