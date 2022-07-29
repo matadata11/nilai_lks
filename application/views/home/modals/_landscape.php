@@ -27,7 +27,7 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="2">Opsi</th>
+                                                    <th class="align-middle text-center" style="width:25%;" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
                                                     <th class="align-middle text-center" rowspan="2">EVERAGE <br>   Undian 1 </th>
@@ -44,8 +44,8 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:10px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                    <td class="align-middle text-center" style="max-width:20px;">
+                                                        <button type="submit" name="submit" class="btn btn-primary px-3"> Simpan</button>
                                                     </td>
                                                     <td  style="width:15%;">
                                                         <input type="text" class="form-control" >

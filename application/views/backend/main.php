@@ -190,6 +190,8 @@
     <script src="<?=__js('mobile.js')?>"></script> 
     <script src="<?=__js('Electronics.js')?>"></script> 
     <script src="<?=__js('farmacy.js')?>"></script> 
+    <script src="<?=__js('fashion.js')?>"></script> 
+    <script src="<?=__js('landscape.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){
