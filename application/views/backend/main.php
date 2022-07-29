@@ -195,6 +195,15 @@
     <script src="<?=__js('fashion.js')?>"></script> 
     <script src="<?=__js('landscape.js')?>"></script> 
     <script src="<?=__js('livestock.js')?>"></script> 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0b0ce61444b71115582bda83ed338fd9631a3666
+>>>>>>> 69fe1bb354b4c0f186256dfcc914b44c6fa27899
+>>>>>>> 6ce961e1fd40e0c49b0db4ccf18501dccc7a6d64
+>>>>>>> c17df31f1b900eb7fdbcd171297f88a7094231f5
 
 	<script>
     $(document).ready(function(){

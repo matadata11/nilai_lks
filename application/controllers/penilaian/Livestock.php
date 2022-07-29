@@ -6,7 +6,7 @@ class Livestock extends Admin_Controller {
     public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('penilaian/M_live', 'live');
+		$this->load->model('penilaian/M_livestock', 'livestock');
 		
 	}
 
@@ -20,7 +20,6 @@ class Livestock extends Admin_Controller {
                 $livestock3 					= $this->input->post('livestock3', TRUE);
                 $livestock4 					= $this->input->post('livestock4', TRUE);
                 $livestock5 					= $this->input->post('livestock5', TRUE);
-                $livestock6 					= $this->input->post('livestock6', TRUE);
                 $j_livestock 					= $this->input->post('j_livestock', TRUE);
                 $admin 				            = $this->input->post('admin', TRUE);
 
