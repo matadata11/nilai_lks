@@ -12,8 +12,8 @@ class Peserta extends Admin_Controller {
 	}
 
 	function get_peserta(){
-        $fullname=$this->input->post('fullname');
-		$data=$this->peserta->get_data_peserta($fullname);
+        $id_peserta=$this->input->post('id_peserta');
+		$data=$this->peserta->get_data_peserta($id_peserta);
 		echo json_encode($data);
     }
 

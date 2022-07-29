@@ -53,12 +53,12 @@ class M_peserta extends CI_Model {
         return $query;
     }
 
-	function get_data_peserta($fullname){
-		$hsl=$this->db->query("SELECT * FROM mt_peserta WHERE fullname='$fullname'");
+	function get_data_peserta($id_peserta){
+		$hsl=$this->db->query("SELECT * FROM mt_peserta WHERE id_peserta='$id_peserta'");
 		if($hsl->num_rows()>0){
 			foreach ($hsl->result() as $data) {
 				$hasil=array(
-					'fullname' 			=> $data->fullname,
+					'id_peserta' 			=> $data->id_peserta,
 					'sekolah_asal' 			=> $data->sekolah_asal,
 					// 'satuan' 		=> $data->satuan,
 					// 'harga_jual'	=> $data->harga_jual,

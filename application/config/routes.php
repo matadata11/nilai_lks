@@ -6,7 +6,7 @@ $route['checkjuri']             = 'auth/login/checkjuri';
 $route['keluaraja']             = 'auth/login/logout';
 
 // route nilai
-$route['nilai'] 				= 'penilaian/Penilaian';
+$route['IT-Network'] 			= 'penilaian/Penilaian';
 $route['add-nilai'] 			= 'penilaian/Penilaian/store';
 $route['edit-nilai'] 			= 'penilaian/Penilaian/update';
 $route['remove-nilai/(:num)']   = 'penilaian/Penilaian/destroy';

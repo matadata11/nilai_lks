@@ -13,21 +13,21 @@ class Nilai_it extends Admin_Controller {
     public function store()
     {
         if(isset($_POST['submit'])){
-            $peserta 					= $this->input->post('peserta', TRUE);
-        $sekolah_asal 					= $this->input->post('sekolah_asal', TRUE);
+            $peserta_id 					= $this->input->post('peserta_id', TRUE);
+            $sekolah_asal 				= $this->input->post('sekolah_asal', TRUE);
             $n1 					    = $this->input->post('n1', TRUE);
             $n2 					    = $this->input->post('n2', TRUE);
             $n3 					    = $this->input->post('n3', TRUE);
-            $total 					    = $this->input->post('total', TRUE);
+            $jumlah 					    = $this->input->post('jumlah', TRUE);
             $admin 					    = $this->input->post('admin', TRUE);
 
             $data = [
-                'peserta'           	=> $peserta,
+                'peserta_id'           	=> $peserta_id,
                 'sekolah_asal'          => $sekolah_asal,
                 'n1'           	        => $n1,
                 'n2'           	        => $n2,
                 'n3'           	        => $n3,
-                'total'           	    => $total,
+                'jumlah'           	    => $jumlah,
                 'admin'           	    => $admin,
                 'tanggal'    	        => date('Y-m-d')
             ];

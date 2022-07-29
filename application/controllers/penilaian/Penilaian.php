@@ -9,12 +9,13 @@ class Penilaian extends Admin_Controller {
 		parent::__construct();
 		$this->load->model('penilaian/M_penilaian', 'nilai');
 		$this->load->model('lomba/M_lomba', 'lomba');
-		
+		$this->load->model('penilaian/M_nilai_it', 'nilai_it');
 	}
 	
 
 	public function index()
 	{
+		$this->vars['total']	    = $this->nilai_it->getTotal();
 		$this->vars['penilaian']	= $this->nilai->getData();
 		$this->vars['lomba']	    = $this->lomba->getData();
 
