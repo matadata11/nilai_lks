@@ -212,7 +212,7 @@ class Penilaian extends Admin_Controller {
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_design';
+        $this->vars['content']  	= 'nilai/read_wall';
 		$this->load->view('backend/main', $this->vars);
     }
 

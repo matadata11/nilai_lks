@@ -4,13 +4,13 @@
     <div class="modal-dialog modal-dialog-centered" style="max-width:95%;" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Wall and Floor Tilling</h5>
+                <h5 class="modal-title">wal and Floor Tilling</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span class="text-dark" aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-wall')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -61,31 +61,31 @@
                                                         <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">      
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n1" id="wall1" class="form-control" >
+                                                        <input type="text" name="n1" id="imput1" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n2" id="wall2" class="form-control" >
+                                                        <input type="text" name="n2" id="imput2" class="form-control" >
                                                     </td>
                                                     <td style="width:6%;">
-                                                        <input type="text" name="n3" id="wall3" class="form-control" >
+                                                        <input type="text" name="n3" id="imput3" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n4" id="wall4" class="form-control" >
+                                                        <input type="text" name="n4" id="imput4" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n5" id="wall5" class="form-control" >
+                                                        <input type="text" name="n5" id="imput5" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n6" id="wall6" class="form-control" >
+                                                        <input type="text" name="n6" id="imput5" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text"  name="n7" id="wall7" class="form-control" >
+                                                        <input type="text"  name="n7" id="imput7" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" name="n8" id="wall8" class="form-control" >
+                                                        <input type="text" name="n8" id="imput8" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" name="j_wall" id="walla" class="form-control" readonly>
+                                                        <input type="text" name="j_wall" id="imputa" class="form-control" readonly>
                                                     </td>
                                                 </tr>
                                             </tbody>
