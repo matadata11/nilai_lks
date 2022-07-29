@@ -31,14 +31,13 @@ class Livestock extends Admin_Controller {
                 'livestock3'           	    => $livestock3,
                 'livestock4'           	    => $livestock4,
                 'livestock5'           	    => $livestock5,
-                'livestock6'           	    => $livestock6,
                 'j_livestock'           	=> $j_livestock,
                 'admin'                 => $admin,
                 'tanggal'    	        => date('Y-m-d')
             ];
         }
-        helper_log("add", "Menambah Penilaian live");
-        $save = $this->live->entry($data);
+        helper_log("add", "Menambah Penilaian livestock");
+        $save = $this->livestock->entry($data);
         if($save){
             $this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');
         }else{
@@ -49,4 +48,4 @@ class Livestock extends Admin_Controller {
 
 }
 
-/* End of file live.php */
+/* End of file livestock.php */
