@@ -27,7 +27,7 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:130%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" style="width:15%;" rowspan="2">Opsi</th>
+                                                    <th class="align-middle text-center" style="width:12%;" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
                                                     <th class="align-middle text-center" rowspan="2">OVERALL OF APPEARANCE</th>
@@ -44,7 +44,7 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:8px;">
+                                                <td class="align-middle text-center" style="max-width:6px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"> Simpan</button>
                                                     </td>
                                                 <td style="width:15%;">
@@ -82,15 +82,15 @@
                                                         <input type="text"  name="n7" id="wall7" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n8" id="wall8" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" name="j_wall" id="walla" class="form-control" >
+                                                        <input type="text" name="j_wall" id="walla" class="form-control" readonly>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                  </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
