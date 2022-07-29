@@ -189,6 +189,7 @@
     <script src="<?=__js('electrical.js')?>"></script> 
     <script src="<?=__js('mobile.js')?>"></script> 
     <script src="<?=__js('Electronics.js')?>"></script> 
+    <script src="<?=__js('farmacy.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){

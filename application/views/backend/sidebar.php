@@ -2,7 +2,7 @@
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
             <a href="<?=site_url('dashboard');?>">
-                <img src="<?=__img('nilaiku.png')?>" class="img-fluid" width="140" alt="">
+                <img src="<?=__img('NILAIKU.png')?>" class="img-fluid" width="140" alt="">
             </a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
@@ -14,10 +14,10 @@
         <!-- Menu -->
         <ul class="sidebar-menu">
 		
-		<?php if ($this->session->userdata('level') == 'Super') { ?>
-        <li><a class="nav-link" href="<?=site_url('dashboard')?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-
-        <!-- wilayah -->
+			<li><a class="nav-link" href="<?=site_url('dashboard')?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+			
+			<!-- wilayah -->
+			<?php if ($this->session->userdata('level') == 'Super') { ?>
             <li class="nav-item dropdown">
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-globe-asia"></i><span>Master Wilayah</span></a>
 				<ul class="dropdown-menu">
@@ -26,6 +26,7 @@
 					<li><a class="nav-link" href="<?=site_url('kecamatan')?>">Kecamatan</a></li>
 				</ul>
 			</li>
+			<?php } ?>
             <!-- end -->
 
 			<!-- mata lomba -->
@@ -39,6 +40,7 @@
 			</li>
             <!-- end -->
 
+			<?php if ($this->session->userdata('level') == 'Super') { ?>
 			<li class="menu-header">Data Penilaian</li>
 			<li class="nav-item dropdown">
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-check-double"></i><span>Rekap Penilaian</span></a>
@@ -48,8 +50,8 @@
 					<li><a class="nav-link" href="<?=site_url('cabinet')?>">Cabinet Making</a></li>
 					<li><a class="nav-link" href="<?=site_url('cloud')?>">Cloud Computing</a></li>
 					<li><a class="nav-link" href="<?=site_url('electrical')?>">Electrical Installations</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Electronics</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Farmacy</a></li>
+					<li><a class="nav-link" href="<?=site_url('electronics')?>">Electronics</a></li>
+					<li><a class="nav-link" href="<?=site_url('farmacy')?>">Farmacy</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Fashion Technology</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Graphic Design Technology</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Hairdressing</a></li>
@@ -65,7 +67,9 @@
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Welding</a></li>
 				</ul>
 			</li> 
+			<?php } ?>
 			
+			<?php if ($this->session->userdata('level') == 'Super') { ?>
 			<li class="menu-header">Pengaturan</li>
             <li class="nav-item dropdown">
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-cog"></i><span>Pengaturan</span></a>
@@ -76,7 +80,7 @@
 					<li><a class="nav-link" href="<?=site_url()?>">Web Service</a></li>
 				</ul>
 			</li> 
-		<?php } ?>
+			<?php } ?>
 
 		<!-- juri -->
 		<?php if ($this->session->userdata('level') == 'Juri') { ?>

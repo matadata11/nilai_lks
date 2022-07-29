@@ -26,7 +26,7 @@
                     <div class="card-body p-2">
                     <form method="post" action="<?=site_url('checkdulu')?>">
                             <div class="form-group">
-                                <input type="email" name="kuusername" class="form-control" placeholder="Enter Your Email" autocomplete="off">
+                                <input type="email" name="email" class="form-control" placeholder="Enter Your Email" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <input type="password" name="kupassword" class="form-control" placeholder="Enter Your Password" autocomplete="off">

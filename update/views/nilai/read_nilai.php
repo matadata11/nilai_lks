@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Master Penilaian Peserta</h1>
+        <h1>IT Network System Administration</h1>
         <div class="ml-auto">
             <a href="#add" data-toggle="modal" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-plus"></i> Tambah</a>
             <a href="#import" data-toggle="modal" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-file-import"></i> Import</a>
@@ -14,26 +14,26 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Admin</th>
-                            <th>Mata Lomba</th>
+                            <th>Nama Peserta</th>
+                            <th>Total Nilai</th>
                             <th>Created_at</th>
-                            <th>Opsi</th>
+                            <!-- <th>Opsi</th> -->
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $no=1; foreach($penilaian as $row): ?>
+                    <?php if ($total == true) { ?>
+                    <?php $no=1; foreach($total as $row): ?>
                             <tr>
                                 <td><?=$no++;?></td>
-                                <td><?=$row['admin']?></td>
-                                <td><?=$row['lomba']?></td>
-                                <td><?=indo_date($row['tanggal'])?></td>
-                                <td width="20%" class="text-center">
-                                    <a href="#list<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-info"><i class="fas fa-fw fa-upload"></i></a>
-                                    <a href="#edit<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-pencil-alt"></i></a>
-                                    <a href="#hapus<?=$row['id_penilaian']?>" data-toggle="modal" class="btn btn-sm btn-danger"><i class="fas fa-fw fa-trash-alt"></i></a>
-                                </td>
+                                <td><?=$row->fullname;?></td>
+                                <td><?=$row->jumlah;?> Poin</td>
+                                <td><?=indo_date($row->tanggal)?></td>
+                                <!-- <td width="5%" class="text-center">
+                                    <a href="#list<?=$row->id_it;?>" data-toggle="modal" class="btn btn-sm btn-info"><i class="fas fa-fw fa-print"></i> Pr</a>
+                                </td> -->
                             </tr>
                         <?php endforeach; ?>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

@@ -40,4 +40,18 @@
                 </form>
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-body">
+                <form method="post" action="<?=site_url('public')?>" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Upload Patch Assets <span class="text-danger">*</span></label>
+                        <input type="file" class="form-control" name="patching">
+                    </div>
+					<div class="text-center mt-4">
+                        <button type="submit" name="submit" class="btn btn-block btn-outline-info"><i class="bx bx-cog bx-spin"></i> Patching System</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>

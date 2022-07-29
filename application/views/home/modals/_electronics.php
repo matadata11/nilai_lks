@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-electronics')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -58,16 +58,16 @@
                                                     </td>
 
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="electronics1" id="electronics1" class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="electronics2" id="electronics2" class="form-control" >
                                                     </td>
                                                     <td style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="electronics3" id="electronics3" class="form-control" >
                                                     </td>
                                                     <td  style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_electronics" id="electronicsa" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

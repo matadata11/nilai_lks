@@ -1,25 +1,19 @@
 <!-- tambah -->
-<div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="add" tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">Jabatan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
 				<form method="post" action="<?=site_url('add-pengguna')?>" enctype="multipart/form-data">
 
 					<div class="col-md-12 mt-2">
 						<label>Nama <span class="text-danger">*</span></label><br>
-						<input type="hidden" class="form-control" name="admin"  value="<?=$this->session->userdata('fullname'); ?>" required readonly autocomplete="off">
-
 						<input type='text' name='fullname' class='form-control' placeholder="ex. Dwi Satria Pangestu, A.Md.Kom" required='true' autocomplete="off"/>
 					</div>
 
-					<div class="col-md-12 mt-2">
-						<label>ID Card <span class="text-danger">*</span></label><br>
-						<input type='text' name='id_card' class='form-control' placeholder="ex. 0000*****" required='true' autocomplete="off"/>
-					</div>
 
 					<div class="col-md-12 mt-2">
 						<label>Email <span class="text-danger">*</span></label><br>
@@ -28,12 +22,12 @@
 
 					<div class="col-md-12 mt-2">
 						<label>Password <span class="text-danger">*</span></label><br>
-						<input type='password' name='password' class='form-control' required='true' placeholder="ex. ********" autocomplete="off"/>
+						<input type='password' name='kupassword' class='form-control' required='true' placeholder="ex. ********" autocomplete="off"/>
 					</div>
 
 					<div class="col-md-12 mt-2">
 						<label>Ulangi Password <span class="text-danger">*</span></label><br>
-						<input type='password' name='password2' class='form-control' required='true' placeholder="ex. ********" autocomplete="off" />
+						<input type='password' name='kupassword2' class='form-control' required='true' placeholder="ex. ********" autocomplete="off" />
 					</div>
 
 					<div class="col-md-12 mt-2">
@@ -42,35 +36,11 @@
 							<option value="">-pilih-</option>
 							<option value="Super">Super</option>
 							<option value="Admin">Admin</option>
-							<option value="HD">HD</option>
-							<option value="Sekolah">Sekolah</option>
-							<option value="Pengawas">Pengawas</option>
-							<option value="Kepala">Kepala</option>
 						</select>
-					</div>
-
-					<div class="col-md-12 mt-2">
-						<label>Kabupaten <span class="text-danger">*</span></label><br>
-						<select name="prov" class="form-control" id="provinsi">
-							<option>- Select Provinsi -</option>
-							<?php 
-								foreach($provinsi as $prov)
-								{
-									echo '<option value="'.$prov->id_provinsi.'">'.$prov->nama.'</option>';
-								}
-							?>
-						</select>
-					</div>
-
-					<div class="col-md-12 mt-2">
-						<label>Kabupaten <span class="text-danger">*</span></label><br>
-						<select name="kabupaten_id" class="form-control" id="kabupaten">
-                                <option value=''>Select Kabupaten</option>
-                            </select>
 					</div>
 
 					<div class="text-center mt-4">
-						<button type="button" class="btn btn-outline-danger aves-effect waves-ligh" data-bs-dismiss="modal"> <i class="bx bx-share"></i> Batal</button>
+						<button type="button"  class="btn btn-outline-danger waves-effect waves-light" class="close" data-dismiss="modal" aria-label="Close"> <i class="bx bx-share"></i> Batal</button>
 						<button type="submit" name="submit" class="btn btn-outline-primary waves-effect waves-light"><i class="bx bx-send"></i> Tambah</button>
 					</div>
 				</form>
