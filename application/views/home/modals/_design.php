@@ -42,23 +42,29 @@
                                                 <td class="align-middle text-center" style="max-width:10px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                <td style="width:23%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:23%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:25%;">
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
+                                                        <td style="width:20%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
+                                                        </td>
+                                                    <td  style="width:8%;">
+                                                        <input type="text" name="design1" id="design1" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="design2" id="design2" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="design3" id="design3" class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_design" id="designa" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
