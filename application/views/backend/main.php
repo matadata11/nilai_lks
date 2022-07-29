@@ -198,6 +198,7 @@
     <script src="<?=__js('nautica.js')?>"></script> 
     <script src="<?=__js('pemasaran.js')?>"></script> 
     <script src="<?=__js('refrigeration.js')?>"></script> 
+    <script src="<?=__js('restaurant.js')?>"></script> 
     
 	<script>
     $(document).ready(function(){
