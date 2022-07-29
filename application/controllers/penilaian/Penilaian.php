@@ -14,8 +14,13 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_cabinet', 'cabinet');
 		$this->load->model('penilaian/M_electrical', 'electrical');
 		$this->load->model('penilaian/M_mobile', 'mobile');
+<<<<<<< HEAD
 		$this->load->model('penilaian/M_electronics', 'electronics');
 		$this->load->model('penilaian/M_farmacy', 'farmacy');
+=======
+		$this->load->model('penilaian/M_fashion', 'fashion');
+		$this->load->model('penilaian/M_landscape', 'landscape');
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 	}
 	
 
@@ -93,6 +98,26 @@ class Penilaian extends Admin_Controller {
         $this->load->view('backend/main', $this->vars);
 	}
 
+    public function Fashion()
+	{
+		$this->vars['total']	    = $this->fashion->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_fashion';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function Landscape()
+	{
+		$this->vars['total']	    = $this->landscape->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_landscape';
+        $this->load->view('backend/main', $this->vars);
+	}
+
 	public function store()
     {
         if(isset($_POST['submit'])){
@@ -104,7 +129,8 @@ class Penilaian extends Admin_Controller {
                 'lomba_id'          => $lomba_id,
                 'tanggal'    		=> date('Y-m-d')
             ];
-        }
+    }
+
         $save = $this->db->get_where('mt_penilaian', ['lomba_id' => $lomba_id])->row_array();
         if($save){
             $this->session->set_flashdata('notif_false', '<div class="alert alert-danger  alert-dismissible fade show" role="alert" id="notifications"><i class="mdi mdi-check-all me-2"></i> Hanya Boleh Absen satu kali . </div>..');
@@ -118,7 +144,7 @@ class Penilaian extends Admin_Controller {
             
         }
         redirect($_SERVER['HTTP_REFERER']);
-    }
+}
 
     public function destroy()
     {

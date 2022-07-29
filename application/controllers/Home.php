@@ -15,8 +15,13 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_cabinet', 'cabinet');
 		$this->load->model('penilaian/M_electrical', 'electrical');
 		$this->load->model('penilaian/M_mobile', 'mobile');
+<<<<<<< HEAD
 		$this->load->model('penilaian/M_electronics', 'electronics');
 		$this->load->model('penilaian/M_farmacy', 'farmacy');
+=======
+		$this->load->model('penilaian/M_fashion', 'fashion');
+		$this->load->model('penilaian/M_landscape', 'landscape');
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 	}
 	
 
@@ -28,10 +33,15 @@ class Home extends Admin_Controller {
 		$this->vars['wall']	    	= $this->wall->getData();
 		$this->vars['cloud']	    = $this->cloud->getData();
 		$this->vars['cabinet']	    = $this->cabinet->getData();
-		$this->vars['electrical']	    = $this->electrical->getData();
+		$this->vars['electrical']	= $this->electrical->getData();
 		$this->vars['mobile']	    = $this->mobile->getData();
+<<<<<<< HEAD
 		$this->vars['electronics']	    = $this->electronics->getData();
 		$this->vars['farmacy']	    = $this->farmacy->getData();
+=======
+		$this->vars['fashion']	    = $this->fashion->getData();
+		$this->vars['landscape']	    = $this->landscape->getData();
+>>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';

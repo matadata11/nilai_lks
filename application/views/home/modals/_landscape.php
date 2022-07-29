@@ -1,7 +1,7 @@
 <!-- tambah -->
 <?php if ($this->session->userdata('fullname') == __session('fullname')) { ?>
 <div class="modal fade" id="add" tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width:90%;" role="document">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:110%;" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Landscape and Gardening</h5>
@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-landscape')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -24,7 +24,7 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
-                                        <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
+                                        <table class="table table-bordered table-hover table-sm" id="" style="width:120%;">
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle text-center" rowspan="2">Opsi</th>
@@ -44,41 +44,48 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:10px;">
+                                                <td class="align-middle text-center" style="max-width:5px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                    <td  style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:18%;">
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
-                                                    <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:20%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape1" id="landscape1" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape2" id="landscape2" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape3" id="landscape3" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape4" id="landscape4" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape5" id="landscape5" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape6" id="landscape6" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape7" id="landscape7" class="form-control" >
+                                                    </td>
+                                                    <td style="width:5%;">
+                                                        <input type="text" name="landscape8" id="landscape8" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_landscape" id="landscapea"class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>
