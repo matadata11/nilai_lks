@@ -14,13 +14,6 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_cabinet', 'cabinet');
 		$this->load->model('penilaian/M_electrical', 'electrical');
 		$this->load->model('penilaian/M_mobile', 'mobile');
-<<<<<<< HEAD
-		$this->load->model('penilaian/M_electronics', 'electronics');
-		$this->load->model('penilaian/M_farmacy', 'farmacy');
-=======
-		$this->load->model('penilaian/M_fashion', 'fashion');
-		$this->load->model('penilaian/M_landscape', 'landscape');
->>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
 	}
 	
 

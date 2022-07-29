@@ -11,16 +11,11 @@ $route['cloud'] 			    = 'penilaian/Penilaian/cloud';
 $route['cabinet'] 			    = 'penilaian/Penilaian/cabinet';
 $route['electrical'] 			= 'penilaian/Penilaian/electrical';
 $route['mobile'] 			    = 'penilaian/Penilaian/mobile';
-<<<<<<< HEAD
 $route['electronics'] 			= 'penilaian/Penilaian/Electronics';
-$route['farmacy'] 			= 'penilaian/Penilaian/farmacy';
-=======
+$route['farmacy'] 			    = 'penilaian/Penilaian/farmacy';
 $route['Electronics'] 			= 'penilaian/Penilaian/Electronics';
 $route['fashion'] 			    = 'penilaian/Penilaian/Fashion';
 $route['landscape'] 			= 'penilaian/Penilaian/Landscape';
->>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
-
-
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
 $route['add-wall'] 			    = 'penilaian/Wall/store';
 $route['add-cloud'] 			= 'penilaian/Cloud/store';
@@ -28,12 +23,11 @@ $route['add-cabinet'] 			= 'penilaian/Cabinet/store';
 $route['add-electrical'] 		= 'penilaian/Electrical/store';
 $route['add-mobile'] 		    = 'penilaian/Mobil/store';
 $route['add-electronics'] 		= 'penilaian/Electronics/store';
-<<<<<<< HEAD
 $route['add-farmacy'] 		    = 'penilaian/farmacy/store';
-=======
 $route['add-fashion'] 		    = 'penilaian/Fashion/store';
 $route['add-landscape'] 		= 'penilaian/Landscape/store';
->>>>>>> 6821f535444108ca7440ab97edc051439f9d5ac9
+
+
 // end
 
 // route peserta

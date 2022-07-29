@@ -17,6 +17,8 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_mobile', 'mobile');
 		$this->load->model('penilaian/M_electronics', 'electronics');
 		$this->load->model('penilaian/M_farmacy', 'farmacy');
+		$this->load->model('penilaian/M_fashion', 'fashion');
+		$this->load->model('penilaian/M_landscape', 'landscape');
 	}
 	
 
