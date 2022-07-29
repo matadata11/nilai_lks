@@ -22,7 +22,7 @@ class Mobil extends Admin_Controller {
             $mobile5 					= $this->input->post('mobile5', TRUE);
             $mobile6 					= $this->input->post('mobile6', TRUE);
             $j_mobile 					= $this->input->post('j_mobile', TRUE);
-            $admin 				        = $this->input->post('admin', TRUE);
+            $admin 				= $this->input->post('admin', TRUE);
 
             $data = [
                 'peserta_id'           	=> $peserta_id,

@@ -30,13 +30,12 @@ class Home extends Admin_Controller {
 		$this->vars['wall']	    	= $this->wall->getData();
 		$this->vars['cloud']	    = $this->cloud->getData();
 		$this->vars['cabinet']	    = $this->cabinet->getData();
-		$this->vars['electrical']	= $this->electrical->getData();
+		$this->vars['electrical']	    = $this->electrical->getData();
 		$this->vars['mobile']	    = $this->mobile->getData();
-		$this->vars['electronics']	= $this->electronics->getData();
+		$this->vars['electronics']	    = $this->electronics->getData();
 		$this->vars['farmacy']	    = $this->farmacy->getData();
 		$this->vars['fashion']	    = $this->fashion->getData();
-		$this->vars['landscape']	= $this->landscape->getData();
-	
+		$this->vars['landscape']	    = $this->landscape->getData();
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';
