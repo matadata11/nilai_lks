@@ -19,6 +19,7 @@ $route['livestock'] 			= 'penilaian/Penilaian/livestock';
 $route['mechanical'] 			= 'penilaian/Penilaian/mechanical';
 $route['motor'] 			    = 'penilaian/Penilaian/motor';
 $route['nautica'] 			    = 'penilaian/Penilaian/nautica';
+$route['pemasaran'] 			= 'penilaian/Penilaian/pemasaran';
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
@@ -35,6 +36,7 @@ $route['add-livestock'] 		= 'penilaian/Livestock/store';
 $route['add-mechanical'] 		= 'penilaian/Mechanical/store';
 $route['add-motor'] 		    = 'penilaian/Motor/store';
 $route['add-nautica'] 		    = 'penilaian/Nautica/store';
+$route['add-pemasaran'] 		= 'penilaian/Pemasaran/store';
 
 // end
 

@@ -196,6 +196,7 @@
     <script src="<?=__js('mechanical.js')?>"></script> 
     <script src="<?=__js('motor.js')?>"></script> 
     <script src="<?=__js('nautica.js')?>"></script> 
+    <script src="<?=__js('pemasaran.js')?>"></script> 
     
 	<script>
     $(document).ready(function(){

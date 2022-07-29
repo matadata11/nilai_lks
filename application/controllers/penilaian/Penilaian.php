@@ -127,16 +127,7 @@ class Penilaian extends Admin_Controller {
         $this->vars['content']  	= 'nilai/read_livestock';
         $this->load->view('backend/main', $this->vars);
 	}
-
-<<<<<<< HEAD
-    public function motor()
-	{
-		$this->vars['total']	    = $this->motor->getTotal();
-		$this->vars['lomba']	    = $this->lomba->getData();
-
-		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
-        $this->vars['content']  	= 'nilai/read_motor';
-=======
+    
 	public function mechanical()
 	{
 		$this->vars['total']	    = $this->mechanical->getTotal();
@@ -144,10 +135,36 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_mechanical';
->>>>>>> 60d55cfa7c429707aca97a7357a0dfe8303d5408
         $this->load->view('backend/main', $this->vars);
 	}
 
+    public function motor()
+	{
+		$this->vars['total']	    = $this->motor->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_motor';
+    }
+
+    
+    public function nautica()
+	{
+		$this->vars['total']	    = $this->nautica->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_motor';
+    }
+
+    public function pemasaran()
+	{
+		$this->vars['total']	    = $this->pemasaran->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_motor';
+    }
 
 	public function store()
     {
