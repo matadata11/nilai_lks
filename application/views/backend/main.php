@@ -190,17 +190,11 @@
     <script src="<?=__js('mobile.js')?>"></script> 
     <script src="<?=__js('Electronics.js')?>"></script> 
     <script src="<?=__js('farmacy.js')?>"></script> 
-<<<<<<< HEAD
     <script src="<?=__js('fashion.js')?>"></script> 
     <script src="<?=__js('landscape.js')?>"></script> 
-=======
-<<<<<<< HEAD
     <script src="<?=__js('fashion.js')?>"></script> 
     <script src="<?=__js('landscape.js')?>"></script> 
     <script src="<?=__js('livestock.js')?>"></script> 
-=======
->>>>>>> 0b0ce61444b71115582bda83ed338fd9631a3666
->>>>>>> 69fe1bb354b4c0f186256dfcc914b44c6fa27899
 
 	<script>
     $(document).ready(function(){
