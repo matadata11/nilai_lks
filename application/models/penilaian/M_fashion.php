@@ -8,7 +8,7 @@ class M_fashion extends CI_Model {
     // Mengambil data dari database
     public function getData()
     {
-        $this->db->order_by('j_fashion', 'DESC');
+        $this->db->order_by('j_fashion', 'DESC');x
         $query = $this->db->select('*');
         $query = $this->db->join('mt_peserta', 'mt_peserta.id_peserta = nl_fashion.peserta_id');
         $query = $this->db->get_where($this->_table, ['admin' => __session('fullname')]);
