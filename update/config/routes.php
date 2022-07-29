@@ -12,7 +12,19 @@ $route['cabinet'] 			    = 'penilaian/Penilaian/cabinet';
 $route['electrical'] 			= 'penilaian/Penilaian/electrical';
 $route['mobile'] 			    = 'penilaian/Penilaian/mobile';
 $route['electronics'] 			= 'penilaian/Penilaian/Electronics';
-$route['farmacy'] 			= 'penilaian/Penilaian/farmacy';
+$route['farmacy'] 			    = 'penilaian/Penilaian/farmacy';
+$route['fashion'] 			    = 'penilaian/Penilaian/fashion';
+$route['landscape'] 			= 'penilaian/Penilaian/landscape';
+$route['livestock'] 			= 'penilaian/Penilaian/livestock';
+$route['mechanical'] 			= 'penilaian/Penilaian/mechanical';
+$route['motor'] 			    = 'penilaian/Penilaian/motor';
+$route['nautica'] 			    = 'penilaian/Penilaian/nautica';
+$route['pemasaran'] 			= 'penilaian/Penilaian/pemasaran';
+$route['refrigeration'] 	    = 'penilaian/Penilaian/refrigeration';
+$route['restaurant'] 	        = 'penilaian/Penilaian/restaurant';
+$route['design'] 	            = 'penilaian/Penilaian/design';
+$route['wall'] 	                = 'penilaian/Penilaian/wall';
+$route['welding'] 	            = 'penilaian/Penilaian/welding';
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
@@ -22,7 +34,19 @@ $route['add-cabinet'] 			= 'penilaian/Cabinet/store';
 $route['add-electrical'] 		= 'penilaian/Electrical/store';
 $route['add-mobile'] 		    = 'penilaian/Mobil/store';
 $route['add-electronics'] 		= 'penilaian/Electronics/store';
-$route['add-farmacy'] 		    = 'penilaian/farmacy/store';
+$route['add-farmacy'] 		    = 'penilaian/Farmacy/store';
+$route['add-fashion'] 		    = 'penilaian/Fashion/store';
+$route['add-landscape'] 		= 'penilaian/Landscape/store';
+$route['add-livestock'] 		= 'penilaian/Livestock/store';
+$route['add-mechanical'] 		= 'penilaian/Mechanical/store';
+$route['add-motor'] 		    = 'penilaian/Motor/store';
+$route['add-nautica'] 		    = 'penilaian/Nautica/store';
+$route['add-pemasaran'] 		= 'penilaian/Pemasaran/store';
+$route['add-refrigeration'] 	= 'penilaian/Refrigeration/store';
+$route['add-restaurant'] 	    = 'penilaian/Restaurant/store';
+$route['add-design'] 	        = 'penilaian/Design/store';
+$route['add-welding'] 	        = 'penilaian/Welding/store';
+
 // end
 
 // route peserta

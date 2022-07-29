@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-pemasaran')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -43,22 +43,29 @@
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
                                                 <td style="width:23%;">
-                                                        <input type="text" class="form-control" >
+                                                <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
                                                     <td style="width:23%;">
-                                                        <input type="text" class="form-control" >
+                                                    <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                            <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="pemasaran1" id="pem1" class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="pemasaran2" id="pem2"  class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="pemasaran3" id="pem3"  class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_pemasaran" id="pema"  class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

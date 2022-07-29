@@ -190,7 +190,18 @@
     <script src="<?=__js('mobile.js')?>"></script> 
     <script src="<?=__js('Electronics.js')?>"></script> 
     <script src="<?=__js('farmacy.js')?>"></script> 
-
+    <script src="<?=__js('fashion.js')?>"></script> 
+    <script src="<?=__js('landscape.js')?>"></script>  
+    <script src="<?=__js('livestock.js')?>"></script> 
+    <script src="<?=__js('mechanical.js')?>"></script> 
+    <script src="<?=__js('motor.js')?>"></script> 
+    <script src="<?=__js('nautica.js')?>"></script> 
+    <script src="<?=__js('pemasaran.js')?>"></script> 
+    <script src="<?=__js('refrigeration.js')?>"></script> 
+    <script src="<?=__js('restaurant.js')?>"></script> 
+    <script src="<?=__js('design.js')?>"></script> 
+    <script src="<?=__js('welding.js')?>"></script> 
+    
 	<script>
     $(document).ready(function(){
         $("#provinsi").change(function (){
@@ -392,6 +403,7 @@ function clock()
 	});
 </script>
 
+<script></script>
 
 </body>
 </html>

@@ -4,13 +4,13 @@
     <div class="modal-dialog modal-dialog-centered" style="max-width:95%;" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Wall and Floor Tilling</h5>
+                <h5 class="modal-title">wal and Floor Tilling</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span class="text-dark" aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-wall')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -24,10 +24,10 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
-                                        <table class="table table-bordered table-hover table-sm" id="" style="width:110%;">
+                                        <table class="table table-bordered table-hover table-sm" id="" style="width:130%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="2">Opsi</th>
+                                                    <th class="align-middle text-center" style="width:12%;" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
                                                     <th class="align-middle text-center" rowspan="2">OVERALL OF APPEARANCE</th>
@@ -44,46 +44,53 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:8px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                <td class="align-middle text-center" style="max-width:6px;">
+                                                    <button type="submit" name="submit" class="btn btn-primary px-3"> Simpan</button>
                                                     </td>
                                                 <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
-                                                    <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:18%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">      
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n1" id="imput1" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n2" id="imput2" class="form-control" >
                                                     </td>
                                                     <td style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n3" id="imput3" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n4" id="imput4" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n5" id="imput5" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n6" id="imput5" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text"  name="n7" id="imput7" class="form-control" >
                                                     </td>
                                                     <td  style="width:6%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="n8" id="imput8" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_wall" id="imputa" class="form-control" readonly>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                  </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>

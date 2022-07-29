@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-landscape')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -24,10 +24,10 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
-                                        <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
+                                        <table class="table table-bordered table-hover table-sm" id="" style="width:150%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="2">Opsi</th>
+                                                    <th class="align-middle text-center" style="width:9%;" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
                                                     <th class="align-middle text-center" rowspan="2">EVERAGE <br>   Undian 1 </th>
@@ -44,41 +44,48 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:10px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                    <td class="align-middle text-center" style="max-width:20px;">
+                                                        <button type="submit" name="submit" class="btn btn-primary px-3"> Simpan</button>
                                                     </td>
                                                     <td  style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
                                                     <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required=""> 
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape1" id="input1" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape2" id="input2"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape3" id="input3"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape4" id="input4"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape5" id="input5"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape6" id="input6"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape7" id="input7"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="landscape8" id="input8"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_landscape" id="inputa"  class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

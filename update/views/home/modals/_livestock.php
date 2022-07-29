@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-livestock')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -44,29 +44,36 @@
                                                 <td class="align-middle text-center" style="max-width:10px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:20%;">
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
-                                                    <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:20%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="livestock1" id="livestock1" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="livestock2" id="livestock2" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="livestock3" id="livestock3" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="livestock4" id="livestock4" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="livestock5" id="livestock5" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_livestock" id="livestocka" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

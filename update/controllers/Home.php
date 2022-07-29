@@ -17,6 +17,17 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_mobile', 'mobile');
 		$this->load->model('penilaian/M_electronics', 'electronics');
 		$this->load->model('penilaian/M_farmacy', 'farmacy');
+		$this->load->model('penilaian/M_fashion', 'fashion');
+		$this->load->model('penilaian/M_landscape', 'landscape');
+		$this->load->model('penilaian/M_livestock', 'livestock');
+		$this->load->model('penilaian/M_mechanical', 'mechanical');
+		$this->load->model('penilaian/M_motor', 'motor');
+		$this->load->model('penilaian/M_nautica', 'nautica');
+		$this->load->model('penilaian/M_pemasaran', 'pemasaran');
+		$this->load->model('penilaian/M_refrigeration', 'refrigeration');
+		$this->load->model('penilaian/M_restaurant', 'restaurant');
+		$this->load->model('penilaian/M_design', 'design');
+		$this->load->model('penilaian/M_welding', 'welding');
 	}
 	
 
@@ -28,10 +39,23 @@ class Home extends Admin_Controller {
 		$this->vars['wall']	    	= $this->wall->getData();
 		$this->vars['cloud']	    = $this->cloud->getData();
 		$this->vars['cabinet']	    = $this->cabinet->getData();
-		$this->vars['electrical']	    = $this->electrical->getData();
+		$this->vars['electrical']	= $this->electrical->getData();
 		$this->vars['mobile']	    = $this->mobile->getData();
-		$this->vars['electronics']	    = $this->electronics->getData();
+		$this->vars['electronics']	= $this->electronics->getData();
 		$this->vars['farmacy']	    = $this->farmacy->getData();
+		$this->vars['fashion']	    = $this->fashion->getData();
+		$this->vars['landscape']	= $this->landscape->getData();
+		$this->vars['livestock']	= $this->livestock->getData();
+		$this->vars['landscape']	= $this->landscape->getData();
+		$this->vars['livestock']	= $this->livestock->getData();
+		$this->vars['mechanical']	= $this->mechanical->getData();
+		$this->vars['motor']	    = $this->motor->getData();
+		$this->vars['nautica']	    = $this->nautica->getData();
+		$this->vars['pemasaran']	= $this->pemasaran->getData();
+		$this->vars['refrigeration']= $this->refrigeration->getData();
+		$this->vars['restaurant']	= $this->restaurant->getData();
+		$this->vars['design']		= $this->design->getData();
+		$this->vars['welding']		= $this->welding->getData();
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';

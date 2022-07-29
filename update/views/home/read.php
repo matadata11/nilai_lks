@@ -156,9 +156,140 @@
 							</td>
 						</tr>
 						<?php endforeach; ?>
+
+						<?php  foreach($fashion as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_fashion']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_fashion'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($landscape as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_landscape']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_landscape'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($livestock as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_livestock']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_livestock'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($mechanical as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_mechanical']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_mechanical'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($motor as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_motor']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_motor'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($nautica as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_nautica']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_nautica'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($pemasaran as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_pemasaran']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_pemasaran'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($refrigeration as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_refrigeration']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_refrigeration'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($restaurant as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_restaurant']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_restaurant'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($design as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_design']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_design'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($wall as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_wall']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_wall'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+						<?php  foreach($welding as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_welding']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_welding'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
 					</table>
-
-
 					</div>
 				</div>
 			</div>
