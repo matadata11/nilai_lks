@@ -12,6 +12,8 @@ $route['cabinet'] 			    = 'penilaian/Penilaian/cabinet';
 $route['electrical'] 			= 'penilaian/Penilaian/electrical';
 $route['mobile'] 			    = 'penilaian/Penilaian/mobile';
 $route['Electronics'] 			= 'penilaian/Penilaian/Electronics';
+$route['fashion'] 			    = 'penilaian/Penilaian/Fashion';
+$route['landscape'] 			= 'penilaian/Penilaian/Landscape';
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
@@ -21,6 +23,8 @@ $route['add-cabinet'] 			= 'penilaian/Cabinet/store';
 $route['add-electrical'] 		= 'penilaian/Electrical/store';
 $route['add-mobile'] 		    = 'penilaian/Mobil/store';
 $route['add-electronics'] 		= 'penilaian/Electronics/store';
+$route['add-fashion'] 		    = 'penilaian/Fashion/store';
+$route['add-landscape'] 		= 'penilaian/Landscape/store';
 // end
 
 // route peserta

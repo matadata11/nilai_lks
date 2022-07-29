@@ -132,6 +132,32 @@
 						</tr>
 						<?php endforeach; ?>
 						<!-- end -->
+
+						<!-- fashion -->
+						<?php  foreach($fashion as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_fashion']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_fashion'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<!-- end -->
+
+						<!-- landscape -->
+						<?php  foreach($fashion as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_landscape']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_landscape'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<!-- end -->
 					</table>
 
 
