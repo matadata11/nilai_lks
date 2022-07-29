@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-motor')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -27,7 +27,7 @@
                                         <table class="table table-bordered table-hover table-sm" id="" style="width:100%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="2">Opsi</th>
+                                                    <th class="align-middle text-center" style="max-width:6%;" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2"><b>Nama Peserta</b></th>
                                                     <th class="align-middle text-center" rowspan="2"><b>Nama Sekolah</b></th>
                                                     <th class="align-middle text-center" rowspan="2"><b>Nilai Teori</b> <br> <b>(25%)</b></th>
@@ -39,26 +39,33 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:10px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                <td class="align-middle text-center" style="max-width:5%;">
+                                                    <button type="submit" name="submit" class="btn btn-primary px-3"> Simpan</button>
                                                     </td>
-                                                <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                <td style="width:25%;">
+                                                <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
-                                                    <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td style="width:25%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="motor1" id="motor1" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="motor2" id="motor2" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="motor3" id="motor3" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_motor" id="motora" class="form-control" >
                                                     </td>
                                                 </tr>
                                             </tbody>

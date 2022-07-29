@@ -127,6 +127,16 @@ class Penilaian extends Admin_Controller {
         $this->load->view('backend/main', $this->vars);
 	}
 
+    public function motor()
+	{
+		$this->vars['total']	    = $this->motor->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_motor';
+        $this->load->view('backend/main', $this->vars);
+	}
+
 
 	public function store()
     {

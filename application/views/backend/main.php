@@ -193,6 +193,7 @@
     <script src="<?=__js('fashion.js')?>"></script> 
     <script src="<?=__js('landscape.js')?>"></script> 
     <script src="<?=__js('livestock.js')?>"></script> 
+    <script src="<?=__js('motor.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){

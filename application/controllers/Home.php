@@ -20,6 +20,7 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_fashion', 'fashion');
 		$this->load->model('penilaian/M_landscape', 'landscape');
 		$this->load->model('penilaian/M_livestock', 'livestock');
+		$this->load->model('penilaian/M_motor', 'motor');
 	}
 	
 
@@ -38,6 +39,7 @@ class Home extends Admin_Controller {
 		$this->vars['fashion']	    = $this->fashion->getData();
 		$this->vars['landscape']	    = $this->landscape->getData();
 		$this->vars['livestock']	    = $this->livestock->getData();
+		$this->vars['motor']	    = $this->motor->getData();
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';
