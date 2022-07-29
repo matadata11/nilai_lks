@@ -150,11 +150,7 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_motor';
-<<<<<<< HEAD
-        $this->load->view('backend/main', $this->vars);
-=======
 		$this->load->view('backend/main', $this->vars);
->>>>>>> 974a864edb37a4227097134910a9c23a845733ae
     }
 
     
@@ -165,11 +161,7 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_motor';
-<<<<<<< HEAD
-        $this->load->view('backend/main', $this->vars);
-=======
 		$this->load->view('backend/main', $this->vars);
->>>>>>> 974a864edb37a4227097134910a9c23a845733ae
     }
 
     public function pemasaran()
@@ -179,11 +171,7 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_motor';
-<<<<<<< HEAD
-        $this->load->view('backend/main', $this->vars);
-=======
 		$this->load->view('backend/main', $this->vars);
->>>>>>> 974a864edb37a4227097134910a9c23a845733ae
     }
 
     public function refrigeration()
@@ -193,9 +181,6 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_motor';
-<<<<<<< HEAD
-        $this->load->view('backend/main', $this->vars);
-=======
 		$this->load->view('backend/main', $this->vars);
     }
 
@@ -207,7 +192,6 @@ class Penilaian extends Admin_Controller {
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_motor';
 		$this->load->view('backend/main', $this->vars);
->>>>>>> 974a864edb37a4227097134910a9c23a845733ae
     }
 
 	public function store()
