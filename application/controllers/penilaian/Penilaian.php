@@ -26,6 +26,7 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_refrigeration', 'refrigeration');
 		$this->load->model('penilaian/M_restaurant', 'restaurant');
 		$this->load->model('penilaian/M_design', 'design');
+		$this->load->model('penilaian/M_wall', 'wall');
 	}
 	
 
@@ -198,6 +199,16 @@ class Penilaian extends Admin_Controller {
 	public function design()
 	{
 		$this->vars['total']	    = $this->design->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_design';
+		$this->load->view('backend/main', $this->vars);
+    }
+
+    public function wall()
+	{
+		$this->vars['total']	    = $this->wall->getTotal();
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';

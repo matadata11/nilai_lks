@@ -92,7 +92,7 @@
         </ul>
         
         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-            <a href="https://www.youtube.com/watch?v=J-n6nm14jWI" class="btn btn-primary btn-lg btn-block btn-icon-split">
+            <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split">
 			<i class="fas fa-play"></i> Panduan Aplikasi NilaiKu
             </a>
         </div>

@@ -23,6 +23,7 @@ $route['pemasaran'] 			= 'penilaian/Penilaian/pemasaran';
 $route['refrigeration'] 	    = 'penilaian/Penilaian/refrigeration';
 $route['restaurant'] 	        = 'penilaian/Penilaian/restaurant';
 $route['design'] 	            = 'penilaian/Penilaian/design';
+$route['wall'] 	                = 'penilaian/Penilaian/wall';
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
