@@ -20,6 +20,10 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_landscape', 'landscape');
 		$this->load->model('penilaian/M_livestock', 'livestock');
 		$this->load->model('penilaian/M_mechanical', 'mechanical');
+		$this->load->model('penilaian/M_motor', 'motor');
+		$this->load->model('penilaian/M_nautica', 'nautica');
+		$this->load->model('penilaian/M_pemasaran', 'pemasaran');
+		$this->load->model('penilaian/M_refrigeration', 'refrigeration');
 	}
 	
 
@@ -160,6 +164,15 @@ class Penilaian extends Admin_Controller {
     public function pemasaran()
 	{
 		$this->vars['total']	    = $this->pemasaran->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_motor';
+    }
+
+    public function refrigeration()
+	{
+		$this->vars['total']	    = $this->refrigeration->getTotal();
 		$this->vars['lomba']	    = $this->lomba->getData();
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';

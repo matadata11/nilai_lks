@@ -20,6 +20,7 @@ $route['mechanical'] 			= 'penilaian/Penilaian/mechanical';
 $route['motor'] 			    = 'penilaian/Penilaian/motor';
 $route['nautica'] 			    = 'penilaian/Penilaian/nautica';
 $route['pemasaran'] 			= 'penilaian/Penilaian/pemasaran';
+$route['refrigeration'] 	    = 'penilaian/Penilaian/refrigeration';
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
@@ -37,6 +38,7 @@ $route['add-mechanical'] 		= 'penilaian/Mechanical/store';
 $route['add-motor'] 		    = 'penilaian/Motor/store';
 $route['add-nautica'] 		    = 'penilaian/Nautica/store';
 $route['add-pemasaran'] 		= 'penilaian/Pemasaran/store';
+$route['add-refrigeration'] 	= 'penilaian/Refrigeration/store';
 
 // end
 
