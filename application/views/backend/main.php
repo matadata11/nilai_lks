@@ -191,10 +191,10 @@
     <script src="<?=__js('Electronics.js')?>"></script> 
     <script src="<?=__js('farmacy.js')?>"></script> 
     <script src="<?=__js('fashion.js')?>"></script> 
-    <script src="<?=__js('landscape.js')?>"></script> 
-    <script src="<?=__js('livestock.js')?>"></script>
-    <script src="<?=__js('motor.js')?>"></script> 
-
+    <script src="<?=__js('landscape.js')?>"></script>  
+    <script src="<?=__js('livestock.js')?>"></script> 
+    <script src="<?=__js('mechanical.js')?>"></script> 
+    
 	<script>
     $(document).ready(function(){
         $("#provinsi").change(function (){
@@ -325,6 +325,7 @@ function clock()
 						$('[name="lomba_id"]').val(data.id_lomba);
 						// $('[name="satuan"]').val(data.satuan);
 						// $('[name="harga"]').val(data.harga_jual);
+						// $('[name="stok"]').val(data.stok);
 						
 					});
 					
@@ -395,6 +396,7 @@ function clock()
 	});
 </script>
 
+<script></script>
 
 </body>
 </html>
