@@ -20,7 +20,11 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_fashion', 'fashion');
 		$this->load->model('penilaian/M_landscape', 'landscape');
 		$this->load->model('penilaian/M_livestock', 'livestock');
+<<<<<<< HEAD
 		$this->load->model('penilaian/M_motor', 'motor');
+=======
+		$this->load->model('penilaian/M_mechanical', 'mechanical');
+>>>>>>> 60d55cfa7c429707aca97a7357a0dfe8303d5408
 	}
 	
 
@@ -32,14 +36,20 @@ class Home extends Admin_Controller {
 		$this->vars['wall']	    	= $this->wall->getData();
 		$this->vars['cloud']	    = $this->cloud->getData();
 		$this->vars['cabinet']	    = $this->cabinet->getData();
-		$this->vars['electrical']	    = $this->electrical->getData();
+		$this->vars['electrical']	= $this->electrical->getData();
 		$this->vars['mobile']	    = $this->mobile->getData();
-		$this->vars['electronics']	    = $this->electronics->getData();
+		$this->vars['electronics']	= $this->electronics->getData();
 		$this->vars['farmacy']	    = $this->farmacy->getData();
 		$this->vars['fashion']	    = $this->fashion->getData();
+<<<<<<< HEAD
 		$this->vars['landscape']	    = $this->landscape->getData();
 		$this->vars['livestock']	    = $this->livestock->getData();
 		$this->vars['motor']	    = $this->motor->getData();
+=======
+		$this->vars['landscape']	= $this->landscape->getData();
+		$this->vars['livestock']	= $this->livestock->getData();
+		$this->vars['mechanical']	= $this->mechanical->getData();
+>>>>>>> 60d55cfa7c429707aca97a7357a0dfe8303d5408
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';

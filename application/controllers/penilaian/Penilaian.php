@@ -19,6 +19,7 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_fashion', 'fashion');
 		$this->load->model('penilaian/M_landscape', 'landscape');
 		$this->load->model('penilaian/M_livestock', 'livestock');
+		$this->load->model('penilaian/M_mechanical', 'mechanical');
 	}
 	
 
@@ -127,6 +128,7 @@ class Penilaian extends Admin_Controller {
         $this->load->view('backend/main', $this->vars);
 	}
 
+<<<<<<< HEAD
     public function motor()
 	{
 		$this->vars['total']	    = $this->motor->getTotal();
@@ -134,6 +136,15 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_motor';
+=======
+	public function mechanical()
+	{
+		$this->vars['total']	    = $this->mechanical->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_mechanical';
+>>>>>>> 60d55cfa7c429707aca97a7357a0dfe8303d5408
         $this->load->view('backend/main', $this->vars);
 	}
 
