@@ -1,12 +1,12 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Motor extends Admin_Controller {
+class Pemasaran extends Admin_Controller {
 
     public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('penilaian/M_motor', 'motor');
+		$this->load->model('penilaian/M_pemasaran', 'pemasaran');
 		
 	}
 
@@ -15,25 +15,25 @@ class Motor extends Admin_Controller {
         if(isset($_POST['submit'])){
             $peserta_id 				= $this->input->post('peserta_id', TRUE);
             $sekolah_asal 				= $this->input->post('sekolah_asal', TRUE);
-            $motor1 					= $this->input->post('motor1', TRUE);
-            $motor2 					= $this->input->post('motor2', TRUE);
-            $motor3 					= $this->input->post('motor3', TRUE);
-            $j_motor 					= $this->input->post('j_motor', TRUE);
+            $pemasaran1 					= $this->input->post('pemasaran1', TRUE);
+            $pemasaran2 					= $this->input->post('pemasaran2', TRUE);
+            $pemasaran3 					= $this->input->post('pemasaran3', TRUE);
+            $j_pemasaran 					= $this->input->post('j_pemasaran', TRUE);
             $admin 				        = $this->input->post('admin', TRUE);
 
             $data = [
                 'peserta_id'           	=> $peserta_id,
                 'sekolah_asal'          => $sekolah_asal,
-                'motor1'           	=> $motor1,
-                'motor2'           	=> $motor2,
-                'motor3'           	=> $motor3,
-                'j_motor'           	=> $j_motor,
+                'pemasaran1'           	=> $pemasaran1,
+                'pemasaran2'           	=> $pemasaran2,
+                'pemasaran3'           	=> $pemasaran3,
+                'j_pemasaran'           	=> $j_pemasaran,
                 'admin'                 => $admin,
                 'tanggal'    	        => date('Y-m-d')
             ];
         }
-        helper_log("add", "Menambah Penilaian motor");
-        $save = $this->motor->entry($data);
+        helper_log("add", "Menambah Penilaian pemasaran");
+        $save = $this->pemasaran->entry($data);
         if($save){
             $this->session->set_flashdata('notif_true', 'Data Berhasil Ditambahkan.');
         }else{
@@ -44,4 +44,4 @@ class Motor extends Admin_Controller {
 
 }
 
-/* End of file motor.php */
+/* End of file pemasaran.php */

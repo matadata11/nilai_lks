@@ -23,6 +23,7 @@ class Home extends Admin_Controller {
 		$this->load->model('penilaian/M_mechanical', 'mechanical');
 		$this->load->model('penilaian/M_motor', 'motor');
 		$this->load->model('penilaian/M_nautica', 'nautica');
+		$this->load->model('penilaian/M_pemasaran', 'pemasaran');
 	}
 	
 

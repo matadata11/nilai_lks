@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_motor extends CI_Model {
+class M_pemasaran extends CI_Model {
 
     private $_table = 'nl_pemasaran';
 
