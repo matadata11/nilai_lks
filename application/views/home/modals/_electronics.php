@@ -39,15 +39,24 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:5px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
-                                                    </td>
-                                                <td style="width:20%;">
-                                                        <input type="text" class="form-control" >
+                                                    <td class="align-middle text-center" style="max-width:5px;">
+                                                        <button type="submit" name="submit" class="btn btn-primary px-3">Simpan</button>
                                                     </td>
                                                     <td style="width:20%;">
-                                                        <input type="text" class="form-control" >
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </td>
+
+                                                    <td style="width:20%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
+                                                    </td>
+
                                                     <td  style="width:10%;">
                                                         <input type="text" class="form-control" >
                                                     </td>

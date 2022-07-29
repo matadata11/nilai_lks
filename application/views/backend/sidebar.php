@@ -45,9 +45,9 @@
 				<ul class="dropdown-menu">
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">IT Network System Administration</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Automobile Technology</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Cabinet Making</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Cloud Computing</a></li>
-					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Electrical Installations</a></li>
+					<li><a class="nav-link" href="<?=site_url('cabinet')?>">Cabinet Making</a></li>
+					<li><a class="nav-link" href="<?=site_url('cloud')?>">Cloud Computing</a></li>
+					<li><a class="nav-link" href="<?=site_url('electrical')?>">Electrical Installations</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Electronics</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Farmacy</a></li>
 					<li><a class="nav-link" href="<?=site_url('IT-Network')?>">Fashion Technology</a></li>

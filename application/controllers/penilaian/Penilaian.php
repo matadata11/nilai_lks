@@ -10,6 +10,10 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_penilaian', 'nilai');
 		$this->load->model('lomba/M_lomba', 'lomba');
 		$this->load->model('penilaian/M_nilai_it', 'nilai_it');
+		$this->load->model('penilaian/M_cloud', 'cloud');
+		$this->load->model('penilaian/M_cabinet', 'cabinet');
+		$this->load->model('penilaian/M_electrical', 'electrical');
+		$this->load->model('penilaian/M_mobile', 'mobile');
 	}
 	
 
@@ -21,6 +25,59 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_nilai';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    // cloud
+    public function cloud()
+	{
+		$this->vars['total']	    = $this->cloud->getTotal();
+		// $this->vars['penilaian']	= $this->nilai->getData();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_cloud';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function cabinet()
+	{
+		$this->vars['total']	    = $this->cabinet->getTotal();
+		// $this->vars['penilaian']	= $this->nilai->getData();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_cabinet';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function electrical()
+	{
+		$this->vars['total']	    = $this->electrical->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_electrical';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function mobile()
+	{
+		$this->vars['total']	    = $this->mobile->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_mobile';
+        $this->load->view('backend/main', $this->vars);
+	}
+
+    public function Electronics()
+	{
+		$this->vars['total']	    = $this->mobile->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_mobile';
         $this->load->view('backend/main', $this->vars);
 	}
 

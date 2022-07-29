@@ -72,7 +72,7 @@
 						<!-- wall -->
 						<?php  foreach($wall as $row): ?>
 						<tr>
-							<td class="text-center"><a href="#"><?=$row['peserta_d']?></a></td>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
 							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
 							<td class="text-center"><div class="badge badge-warning"><?=$row['jumlah']?></div></td>
 							<td class="text-center">
@@ -81,8 +81,58 @@
 						</tr>
 						<?php endforeach; ?>
 						<!-- end wall -->
+
+						<!-- cloud -->
+						<?php  foreach($cloud as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_cloud']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_cloud'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<!-- end cloud -->
+						<!-- cabinet -->
+						<?php  foreach($cabinet as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_cabinet']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_cabinet'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<!-- end cabinet -->
+
+						<!-- electrical -->
+						<?php  foreach($electrical as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_electrical']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_electrical'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<!-- end -->
+
+						<!-- mobila -->
+						<?php  foreach($mobile as $row): ?>
+						<tr>
+							<td class="text-center"><a href="#"><?=$row['fullname']?></a></td>
+							<td class="font-weight-600 text-center"><?=$row['sekolah_asal']?></td>
+							<td class="text-center"><div class="badge badge-warning"><?=$row['j_mobile']?></div></td>
+							<td class="text-center">
+								<a href="#lihat<?=$row['id_mobil'];?>" data-toggle="modal" class="btn btn-primary"><i class="fas fa-eye"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+						<!-- end -->
 					</table>
-					<!-- end IT Network -->
 
 
 					</div>

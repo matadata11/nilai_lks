@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-mobile')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -42,35 +42,45 @@
 
                                             <tbody>
                                                 <tr>
-                                                <td class="align-middle text-center" style="max-width:10px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                    <td class="align-middle text-center" style="max-width:10px;">
+                                                        <button type="submit" name="submit" class="btn btn-primary px-3"> Simpan</button>
                                                     </td>
-                                                <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
+
                                                     <td style="width:15%;">
-                                                        <input type="text" class="form-control" >
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
+                                                    </td>
+
+                                                    <td style="width:15%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
+                                                    </td>
+
+                                                    <td  style="width:8%;">
+                                                        <input type="text" name="mobile1" id="mobile1" class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="mobile2" id="mobile2"  class="form-control" >
                                                     </td>
                                                     <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td  style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="mobile3" id="mobile3"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="mobile4" id="mobile4" class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="mobile5" id="mobile5"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="mobile6" id="mobile6"  class="form-control" >
                                                     </td>
                                                     <td style="width:8%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_mobile" id="mobilea"  class="form-control" readonly>
                                                     </td>
                                                 </tr>
                                             </tbody>

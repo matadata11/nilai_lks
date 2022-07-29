@@ -11,6 +11,10 @@ class Home extends Admin_Controller {
 		$this->load->model('juri/M_juri', 'juri');
 		$this->load->model('penilaian/M_nilai_it', 'nilai_it');
 		$this->load->model('penilaian/M_wall', 'wall');
+		$this->load->model('penilaian/M_cloud', 'cloud');
+		$this->load->model('penilaian/M_cabinet', 'cabinet');
+		$this->load->model('penilaian/M_electrical', 'electrical');
+		$this->load->model('penilaian/M_mobile', 'mobile');
 	}
 	
 
@@ -20,6 +24,10 @@ class Home extends Admin_Controller {
 		$this->vars['juri']	    	= $this->juri->getData();
 		$this->vars['nilai']	    = $this->nilai_it->getData();
 		$this->vars['wall']	    	= $this->wall->getData();
+		$this->vars['cloud']	    = $this->cloud->getData();
+		$this->vars['cabinet']	    = $this->cabinet->getData();
+		$this->vars['electrical']	    = $this->electrical->getData();
+		$this->vars['mobile']	    = $this->mobile->getData();
 
 		$this->vars['title']    	= 'Mata Lomba LKS | LKS 2022';
         $this->vars['content']  	= 'home/read';

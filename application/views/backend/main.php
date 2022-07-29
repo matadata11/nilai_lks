@@ -184,6 +184,11 @@
     <script src="<?=__js('dataTables.bootstrap4.min.js')?>"></script> 
     <script src="<?=__js('network.js')?>"></script> 
     <script src="<?=__js('wall.js')?>"></script> 
+    <script src="<?=__js('cloud.js')?>"></script> 
+    <script src="<?=__js('cabinet.js')?>"></script> 
+    <script src="<?=__js('electrical.js')?>"></script> 
+    <script src="<?=__js('mobile.js')?>"></script> 
+    <script src="<?=__js('Electronics.js')?>"></script> 
 
 	<script>
     $(document).ready(function(){

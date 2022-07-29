@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form method="post" action="<?=site_url('add-list')?>">
+            <form method="post" action="<?=site_url('add-cabinet')?>">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -44,37 +44,48 @@
                                             <tbody>
                                                 <tr>
                                                 <td class="align-middle text-center" style="max-width:7px;">
-                                                    <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
+                                                    <button type="submit" name="submit" class="btn btn-primary px-3">Simpan</button>
                                                     </td>
-                                                <td style="width:16%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
+
                                                     <td style="width:16%;">
-                                                        <input type="text" class="form-control" >
+                                                        <select name="peserta_id" id="id_peserta" class="form-control" required="">
+                                                            <option value="">pilih:</option>
+                                                            <?php foreach($peserta as $row): ?>
+                                                            <option value="<?=$row['id_peserta']?>"><?=$row['fullname']?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
+                                                    </td>
+
+                                                    <td style="width:16%;">
+                                                        <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
+
+                                                        <input type="hidden" class="form-control" name="admin_cabinet" value="<?=__session('fullname');?>" autocomplete="off" required="">
+
+                                                    </td>
+
+                                                    <td  style="width:7%;">
+                                                        <input type="text"  name="cabinet1" id="cabinet1" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
-                                                    </td>
-                                                    <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="cabinet2" id="cabinet2" class="form-control" >
                                                     </td>
                                                     <td style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="cabinet3" id="cabinet3" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="cabinet4" id="cabinet4" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="cabinet5" id="cabinet5" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="cabinet6" id="cabinet6" class="form-control" >
                                                     </td>
                                                     <td  style="width:7%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="cabinet7" id="cabinet7" class="form-control" >
                                                     </td>
                                                     <td  style="width:10%;">
-                                                        <input type="text" class="form-control" >
+                                                        <input type="text" name="j_cabinet" id="cabineta" class="form-control" readonly >
                                                     </td>
                                                 </tr>
                                             </tbody>

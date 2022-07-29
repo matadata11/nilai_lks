@@ -57,7 +57,7 @@ class Master_patch extends Admin_Controller {
         redirect($_SERVER['HTTP_REFERER']);
     }
 
-    public function patchassets()
+    public function public()
     {
         if(isset($_POST['submit'])){
             if(!empty($_FILES['patching']['name'])){ 

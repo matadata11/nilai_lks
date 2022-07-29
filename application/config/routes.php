@@ -7,12 +7,20 @@ $route['keluaraja']             = 'auth/login/logout';
 
 // route nilai
 $route['IT-Network'] 			= 'penilaian/Penilaian';
-$route['add-nilai'] 			= 'penilaian/Penilaian/store';
-$route['edit-nilai'] 			= 'penilaian/Penilaian/update';
-$route['remove-nilai/(:num)']   = 'penilaian/Penilaian/destroy';
+$route['cloud'] 			    = 'penilaian/Penilaian/cloud';
+$route['cabinet'] 			    = 'penilaian/Penilaian/cabinet';
+$route['electrical'] 			= 'penilaian/Penilaian/electrical';
+$route['mobile'] 			    = 'penilaian/Penilaian/mobile';
+$route['Electronics'] 			= 'penilaian/Penilaian/Electronics';
+
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
 $route['add-wall'] 			    = 'penilaian/Wall/store';
+$route['add-cloud'] 			= 'penilaian/Cloud/store';
+$route['add-cabinet'] 			= 'penilaian/Cabinet/store';
+$route['add-electrical'] 		= 'penilaian/Electrical/store';
+$route['add-mobile'] 		    = 'penilaian/Mobil/store';
+$route['add-electronics'] 		= 'penilaian/Electronics/store';
 // end
 
 // route peserta
@@ -39,6 +47,7 @@ $route['masuk'] 				= 'Authha';
 // route pact
 $route['patch']                = 'setting/Master_patch';
 $route['patching']             = 'setting/Master_patch/patchsystem';
+$route['public']               = 'setting/Master_patch/public';
 // end
 
 
