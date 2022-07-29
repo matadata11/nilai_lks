@@ -27,6 +27,7 @@ class Penilaian extends Admin_Controller {
 		$this->load->model('penilaian/M_restaurant', 'restaurant');
 		$this->load->model('penilaian/M_design', 'design');
 		$this->load->model('penilaian/M_wall', 'wall');
+		$this->load->model('penilaian/M_welding', 'welding');
 	}
 	
 
@@ -213,6 +214,19 @@ class Penilaian extends Admin_Controller {
 
 		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
         $this->vars['content']  	= 'nilai/read_wall';
+<<<<<<< HEAD
+=======
+		$this->load->view('backend/main', $this->vars);
+    }
+
+	public function welding()
+	{
+		$this->vars['total']	    = $this->welding->getTotal();
+		$this->vars['lomba']	    = $this->lomba->getData();
+
+		$this->vars['title']    	= 'NILAI LKS | LKS 2022';
+        $this->vars['content']  	= 'nilai/read_welding';
+>>>>>>> fdca46ec892d2c96ab1f979f00cd4fe08900c66a
 		$this->load->view('backend/main', $this->vars);
     }
 

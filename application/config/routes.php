@@ -24,6 +24,7 @@ $route['refrigeration'] 	    = 'penilaian/Penilaian/refrigeration';
 $route['restaurant'] 	        = 'penilaian/Penilaian/restaurant';
 $route['design'] 	            = 'penilaian/Penilaian/design';
 $route['wall'] 	                = 'penilaian/Penilaian/wall';
+$route['welding'] 	            = 'penilaian/Penilaian/welding';
 
 
 $route['add-nilai_it'] 			= 'penilaian/Nilai_it/store';
@@ -44,6 +45,7 @@ $route['add-pemasaran'] 		= 'penilaian/Pemasaran/store';
 $route['add-refrigeration'] 	= 'penilaian/Refrigeration/store';
 $route['add-restaurant'] 	    = 'penilaian/Restaurant/store';
 $route['add-design'] 	        = 'penilaian/Design/store';
+$route['add-welding'] 	        = 'penilaian/Welding/store';
 
 // end
 
