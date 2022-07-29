@@ -24,10 +24,10 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="card-body table-responsive">
-                                        <table class="table table-bordered table-hover table-sm" id="" style="width:110%;">
+                                        <table class="table table-bordered table-hover table-sm" id="" style="width:130%;">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-middle text-center" rowspan="2">Opsi</th>
+                                                    <th class="align-middle text-center" style="width:15%;" rowspan="2">Opsi</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Peserta</th>
                                                     <th class="align-middle text-center" rowspan="2">Nama Sekolah</th>
                                                     <th class="align-middle text-center" rowspan="2">OVERALL OF APPEARANCE</th>
@@ -55,7 +55,7 @@
                                                             <?php endforeach; ?>
                                                         </select>
                                                     </td>
-                                                    <td style="width:15%;">
+                                                    <td style="width:18%;">
                                                         <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
 
                                                         <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">      
