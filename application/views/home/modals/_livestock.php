@@ -44,7 +44,7 @@
                                                 <td class="align-middle text-center" style="max-width:10px;">
                                                     <button type="submit" name="submit" class="btn btn-primary px-3"><i class="fas fa-fw fa-check"></i> Simpan</button>
                                                     </td>
-                                                    <td style="width:15%;">
+                                                    <td style="width:20%;">
                                                         <select name="peserta_id" id="id_peserta" class="form-control" required="">
                                                             <option value="">pilih:</option>
                                                             <?php foreach($peserta as $row): ?>
@@ -52,7 +52,7 @@
                                                             <?php endforeach; ?>
                                                         </select>
                                                     </td>
-                                                    <td style="width:15%;">
+                                                    <td style="width:20%;">
                                                         <input type="text" class="form-control" name="sekolah_asal" autocomplete="off" readonly required="">
 
                                                         <input type="hidden" class="form-control" name="admin" value="<?=__session('fullname');?>" autocomplete="off" required="">
